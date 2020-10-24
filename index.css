@@ -1,3 +1,51 @@
-h1   {
-color: yellow;
+#body {
+	background-color: #EAFAF1;
+	
+	color: rgba(31,85,74,1);
 }
+
+#header {
+	background-color: #EAFAF1;
+	color:#0B5345;
+	width: 800px;
+	margin-left: auto;
+	margin-right: auto;
+
+}
+
+#container{
+	background-color:#EAFAF1;
+}
+
+#content{
+	padding-left: 10px;
+}
+
+#info {
+		left: 54px;
+		top: 310px;
+		position: absolute;
+		overflow: visible;
+		font:GT Flexa VAR;
+		width: 512px;
+		white-space: nowrap;
+		text-align: left;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 78px;
+		float: left;
+		color: rgba(31,85,74,1)
+}
+
+#main{
+	width:600px;
+	float: right;
+	color: #0B5345 ;
+
+}
+
+#footer{
+		background-color: #CACFD2;
+	    clear: all;
+}
+
