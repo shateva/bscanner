@@ -76,7 +76,14 @@
 		font-weight: normal;
 		font-size: 78px;
 		float: left;
-		color: rgba(31,85,74,1)
+		color: rgba(31,85,74,1);
+		
+}
+
+#info p{
+	font-size: 32px;
+	
+	
 }
 
 #main{
