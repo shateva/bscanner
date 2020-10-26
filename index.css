@@ -122,8 +122,20 @@
 	color: red;
 }
 
+/*moved footer to the bottom of the page*/
 #footer{
 		background-color: #CACFD2;
-	    clear: all;
+		width: 100%;
+		border: lightgray solid;
+		position: absolute;
+		top: 850px;
+		
+}
+/*placed the logo and title side to side*/
+#footer h1{
+	display: inline;
+	margin-left: 5px;
+	font-style: GT Flexa VAR;
+	color: #0B5345 ;
 }
 
