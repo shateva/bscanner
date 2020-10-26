@@ -1,3 +1,5 @@
+#typing { color:#0B5345; text-decoration: none; font-weight: normal; font-size: 25px;}
+
 #body {
 	background-color: #EAFAF1;
 	
@@ -43,7 +45,7 @@
 	color: rgba(31,85,74,1);
 	text-decoration: none;
 	font-size: 30px;
-	padding-right: 75px;
+	padding-right: 50px;
 	
 }
 #navbar a:hover{
@@ -62,11 +64,11 @@
 		white-space: nowrap;
 		text-align: left;
 		font-style: normal;
-		font-weight: normal;
-		font-size: 78px;
+		font-weight: bold;
+		font-size: 50px;
 		float: left;
 		color: rgba(31,85,74,1);
-		padding-left: 75px;
+		padding-left: 25px;
 		
 }
 #info p{
@@ -79,10 +81,9 @@
 	float: right;
 	color: #0B5345 ;
 	font-size: xx-large;
-	padding-right: 75px;
+	padding-right: 25px;
 	padding-top: 25px;
 
-	
 }
 /*puts each line on top of each other*/
 #main label{
