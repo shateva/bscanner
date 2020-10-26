@@ -66,6 +66,7 @@
 		font-size: 78px;
 		float: left;
 		color: rgba(31,85,74,1);
+		padding-left: 75px;
 		
 }
 #info p{
@@ -78,6 +79,9 @@
 	float: right;
 	color: #0B5345 ;
 	font-size: xx-large;
+	padding-right: 75px;
+	padding-top: 25px;
+
 	
 }
 /*puts each line on top of each other*/
@@ -86,7 +90,7 @@
 }
 #main textarea{
 	width: 550px;
-	height: 500px;
+	height: 400px;
 	font-size: x-large;
 	border: rgba(31,85,74,1) 5px solid;
 }
