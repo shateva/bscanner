@@ -3,7 +3,6 @@
 	
 	color: rgba(31,85,74,1);
 }
-
 /* made this positioning relative so that I can move the title around*/ 
 #header {
 	background-color: #EAFAF1;
@@ -13,39 +12,32 @@
 	margin-right: auto;
 	position: relative;
 	
-
 }
-
 #header h1{
 	margin-left: 95px;
 	width: 150px;
 	bottom: 0px;
 	position: absolute;
 }
-
 #container{
 	background-color:#EAFAF1;
 }
-
 /*set navbar color*/
 #navbar {
 	background-color: lightgray;
 	color:rgba(31,85,74,1);
 }
-
 /*took out bullet points and centered the links*/
 #navbar ul{
 	padding: 0;
 	list-style: none;
 	text-align: center;
 }
-
 /*puts the links next to each other*/
 #navbar li{
 	display: inline;
 	
 }
-
 /*changed the color, size, and spacing*/
 #navbar a{
 	color: rgba(31,85,74,1);
@@ -54,15 +46,12 @@
 	padding-right: 75px;
 	
 }
-
 #navbar a:hover{
 	color: red;
 }
-
 #content{
 	padding-left: 10px;
 }
-
 #info {
 		left: 54px;
 		top: 310px;
@@ -76,29 +65,31 @@
 		font-weight: normal;
 		font-size: 78px;
 		float: left;
-		color: rgba(31,85,74,1)
+		color: rgba(31,85,74,1);
+		
 }
-
+#info p{
+	font-size: 32px;
+	
+	
+}
 #main{
 	width:600px;
 	float: right;
 	color: #0B5345 ;
 	font-size: xx-large;
 	
-
 }
 /*puts each line on top of each other*/
 #main label{
 	display: block;
 }
-
 #main textarea{
 	width: 550px;
 	height: 500px;
 	font-size: x-large;
 	border: rgba(31,85,74,1) 5px solid;
 }
-
 #main button{
 	background-color: rgba(31,85,74,1);
 	color: white;
@@ -110,7 +101,6 @@
 	padding-top: 12px;
 	
 }
-
 /*made the link white*/
 #main a{
 	color: white;
@@ -126,9 +116,19 @@
 #main button:hover{
 	color: red;
 }
-
+/*moved footer to the bottom of the page*/
 #footer{
 		background-color: #CACFD2;
-	    clear: all;
+		width: 100%;
+		border: lightgray solid;
+		position: absolute;
+		top: 850px;
+		
 }
-
+/*placed the logo and title side to side*/
+#footer h1{
+	display: inline;
+	margin-left: 5px;
+	font-style: GT Flexa VAR;
+	color: #0B5345 ;
+}
