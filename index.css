@@ -27,6 +27,38 @@
 	background-color:#EAFAF1;
 }
 
+/*set navbar color*/
+#navbar {
+	background-color: lightgray;
+	color:rgba(31,85,74,1);
+}
+
+/*took out bullet points and centered the links*/
+#navbar ul{
+	padding: 0;
+	list-style: none;
+	text-align: center;
+}
+
+/*puts the links next to each other*/
+#navbar li{
+	display: inline;
+	
+}
+
+/*changed the color, size, and spacing*/
+#navbar a{
+	color: rgba(31,85,74,1);
+	text-decoration: none;
+	font-size: 30px;
+	padding-right: 75px;
+	
+}
+
+#navbar a:hover{
+	color: red;
+}
+
 #content{
 	padding-left: 10px;
 }
