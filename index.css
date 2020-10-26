@@ -10,6 +10,7 @@
 	width: 800px;
 	margin-left: auto;
 	margin-right: auto;
+	
 
 }
 
@@ -41,7 +42,36 @@
 	width:600px;
 	float: right;
 	color: #0B5345 ;
+	font-size: xx-large;
+	
 
+}
+/*puts each line on top of each other*/
+#main label{
+	display: block;
+}
+
+#main textarea{
+	width: 550px;
+	height: 500px;
+	font-size: x-large;
+	border: rgba(31,85,74,1) 5px solid;
+}
+
+#main button{
+	background-color: rgba(31,85,74,1);
+	color: white;
+	border: none;
+	padding: 10px 15px;
+	width: 175px;
+	font-style: GT Flexa VAR;
+	border-radius: 20px;
+	padding-top: 12px;
+}
+
+
+#main button:hover{
+	color: red;
 }
 
 #footer{

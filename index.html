@@ -2,13 +2,18 @@
 <html> <!--fixed title-->
    		<head>	<!--fixed title-->
    			<link href = "index.css" rel = "stylesheet" type = "text/css">
-     	 	<title> B Checker  </title>
+			  <title> B Checker  </title>
+			  <img src="ps_logo.png" alt= "Logo">
+			  <div id= "header">
+				<h1> B Checker </h1>
+			</div>
+			  
    		</head>
   		<body style="background-color:#EAFAF1 ">
-  			<img src="ps_logo.png" alt= "Logo">
+  			<!--moved logo to the head-->
   		<div id= "container">
   			<div id= "header">
-  				<h1> B Checker </h1>
+  				<!--<h1> B Checker </h1>-->
   			</div>
 
   			<div id = "content">
@@ -18,7 +23,12 @@
   				</div>
 
   				<div id = "main">
-  					<h3> Please Enter Text </h3>
+  					<!--added text box with example text and a button to submit-->
+					<label>Enter text here!</label>
+					<textarea name="text-box" placeholder="With about a week until Election Day, 
+					labeling their opponents as radicals has become the 
+					closing message for Republicans in tight races around the country. While Democrats have focused on health care access and getting the coronavirus pandemic under control, most Republicans have settled on a message of grievance that Democratic governance would bring socialism and left-wing extremism."></textarea>
+					<button>START SCANNING</button>  
   				</div>
   			</div>
 
