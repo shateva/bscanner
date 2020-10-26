@@ -4,14 +4,23 @@
 	color: rgba(31,85,74,1);
 }
 
+/* made this positioning relative so that I can move the title around*/ 
 #header {
 	background-color: #EAFAF1;
 	color:#0B5345;
 	width: 800px;
 	margin-left: none;
 	margin-right: auto;
+	position: relative;
 	
 
+}
+
+#header h1{
+	margin-left: 95px;
+	width: 150px;
+	bottom: 0px;
+	position: absolute;
 }
 
 #container{
@@ -67,6 +76,7 @@
 	font-style: GT Flexa VAR;
 	border-radius: 20px;
 	padding-top: 12px;
+	
 }
 
 
