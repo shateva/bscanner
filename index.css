@@ -111,6 +111,12 @@
 	
 }
 
+/*made the link white*/
+#main a{
+	color: white;
+	text-decoration: none;
+}
+
 
 #main button:hover{
 	color: red;
