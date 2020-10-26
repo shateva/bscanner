@@ -76,8 +76,7 @@
 		font-weight: normal;
 		font-size: 78px;
 		float: left;
-		color: rgba(31,85,74,1);
-		padding-left: 75px;
+		color: rgba(31,85,74,1)
 }
 
 #main{
@@ -85,8 +84,6 @@
 	float: right;
 	color: #0B5345 ;
 	font-size: xx-large;
-	padding-right: 75px;
-	padding-top: 25px;
 	
 
 }
@@ -96,8 +93,8 @@
 }
 
 #main textarea{
-	width: 500px;
-	height: 400px;
+	width: 550px;
+	height: 500px;
 	font-size: x-large;
 	border: rgba(31,85,74,1) 5px solid;
 }
