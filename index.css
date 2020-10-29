@@ -130,10 +130,10 @@ color:#8fcdf1;
 
 /*moved footer to the bottom of the page*/
 #footer{
-background-color: rgba(0, 0, 0, 0.055);
+
 width: 99%;
 position: absolute;
-top: 800px;
+top: 550px;
 }
 /*placed the logo and title side to side*/
 #footer h1{
@@ -143,7 +143,12 @@ font-style: GT Flexa VAR;
 color: #0B5345 ;
 }
 
+#design{
+    margin-top: 100px;
+}
+
+
 #social{
     float: right;
-    margin-top: 14px;
+    margin-top: 10px;
 }

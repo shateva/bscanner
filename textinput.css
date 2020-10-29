@@ -139,11 +139,11 @@ color:#8fcdf1;
 
 /*moved footer to the bottom of the page*/
 #footer{
-background-color: rgba(0, 0, 0, 0.055);
-width: 99%;
-position: absolute;
-top: 800px;
-}
+    width: 99%;
+    position: absolute;
+    top: 760;
+    }
+
 /*placed the logo and title side to side*/
 #footer h1{
 display: inline;
@@ -156,3 +156,8 @@ color: #0B5345 ;
     float: right;
     margin-top: 14px;
 }
+
+#design{
+    margin-top: 100px;
+}
+
