@@ -12,12 +12,16 @@ position: relative;
 }
 
 #logo{
-    margin-left: 48%;
-    margin-right: auto;
+    margin-left: 35%;
     float: left;
     padding-bottom: 20px;
 }
 
+#header h1{
+    float: left;
+    padding-top: 20px;
+    margin-left: 30px;
+}
 
 /*set navbar color*/
 #navbar {
