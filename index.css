@@ -8,39 +8,33 @@ color: rgba(31,85,74,1);
 #header {
 color:#0B5345;
 width: auto;
-margin-left: none;
-margin-right: auto;
 position: relative;
 }
 
 #logo{
-    margin-left: 600px;
+    margin-left: 48%;
     margin-right: auto;
     float: left;
 }
 
-#header h1{
-margin-left: 500px;
-width: 150px;
-bottom: 0px;
-position: absolute;
-}
 
 /*set navbar color*/
 #navbar {
-
 color:rgba(31,85,74,1);
 }
+
 /*took out bullet points and centered the links*/
 #navbar ul{
 list-style: none;
 text-align: center;
 margin-left: 400px;
 }
+
 /*puts the links next to each other*/
 #navbar li{
 display: inline;
 }
+
 /*changed the color, size, and spacing*/
 #navbar a{
 color: rgba(31,85,74,1);
@@ -48,7 +42,7 @@ text-decoration: none;
 font-size: 25px;
 padding-right: 25px;
 float: right;
-margin-top: 100px;
+margin-top: 35px;
 }
 #navbar a:hover{
 color: #54C2AE;
@@ -60,23 +54,20 @@ padding-left: 10px;
 
 #info {
 left: 54px;
-top: 310px;
+top: 200px;
 margin-left: 350px;
 position: absolute;
 overflow: visible;
 font:GT Flexa VAR;
-width: 512px;
+width: 45%;
 white-space: nowrap;
-text-align: left;
+text-align: center;
 font-style: normal;
 font-weight: bold;
-font-size: 50px;
-float: left;
 color: rgba(31,85,74,1);
-padding-left: 50px;
 }
 #info p{
-font-size: 32px;
+font-size: 50px;
 }
 #main{
 width:600px;
@@ -91,6 +82,7 @@ padding-top: 25px;
 #main label{
 display: block;
 }
+
 #main textarea{
 width: 550px;
 height: 400px;
@@ -103,7 +95,7 @@ background-color: #1F554A;
 color: white;
 border: none;
 padding: 10px 15px;
-margin-top: 275px;
+margin-top: 380px;
 margin-left: 625px;
 width: 175px;
 font-style: GT Flexa VAR;
