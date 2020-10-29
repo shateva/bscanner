@@ -110,7 +110,7 @@ color: white;
 border: none;
 padding: 10px 15px;
 margin-top: 20px;
-margin-left: 635px;
+margin-left: 640px;
 width: 175px;
 font-style: GT Flexa VAR;
 border-radius: 20px;
@@ -125,13 +125,13 @@ text-decoration: none;
 
 /*makes the start scanning button red when you hover over it*/
 #scanning a:hover{
-color:#54C2AE;
+color:#8fcdf1;
 }
 
 /*moved footer to the bottom of the page*/
 #footer{
-background-color: #CACFD2;
-width: 100%;
+background-color: rgba(0, 0, 0, 0.055);
+width: 99%;
 position: absolute;
 top: 800px;
 }

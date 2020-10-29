@@ -7,6 +7,11 @@
     margin-top: 270px;
 }
 
+#content{
+	padding-left: 10px;
+}
+
+
 #body {
 background-color: #EAFAF1;
 color: rgba(31,85,74,1);
@@ -89,15 +94,19 @@ font-size: 50px;
 font-family: Futura, "Trebuchet MS", Arial, sans-serif;
 }
 
-#main{
-width:600px;
-float: right;
-color: #0B5345 ;
-font-size: xx-large;
-padding-right: 50px;
-padding-top: 30px;
 
+#main{
+    width:600px;
+    margin-right: 375px;
+	color: #0B5345 ;
+	height: 500px;
+    border: rgba(31,85,74,1) 5px solid;
+    float: right;
+    font-size: x-large;
+    padding-right: 50px;
+    padding-top: 30px;
 }
+
 /*puts each line on top of each other*/
 #main label{
 display: block;
@@ -110,8 +119,8 @@ color: white;
 border: none;
 padding: 10px 15px;
 margin-top: 20px;
-margin-left: 635px;
-width: 175px;
+margin-left: 680px;
+width: 100px;
 font-style: GT Flexa VAR;
 border-radius: 20px;
 padding-top: 12px;
@@ -125,13 +134,13 @@ text-decoration: none;
 
 /*makes the start scanning button red when you hover over it*/
 #scanning a:hover{
-color:#54C2AE;
+color:#8fcdf1;
 }
 
 /*moved footer to the bottom of the page*/
 #footer{
-background-color: #CACFD2;
-width: 100%;
+background-color: rgba(0, 0, 0, 0.055);
+width: 99%;
 position: absolute;
 top: 800px;
 }
