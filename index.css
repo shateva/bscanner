@@ -51,7 +51,7 @@ float: right;
 margin-top: 100px;
 }
 #navbar a:hover{
-color: red;
+color: #54C2AE;
 }
 
 #content{
@@ -118,14 +118,10 @@ text-decoration: none;
 }
 
 /*makes the start scanning button red when you hover over it*/
-#main a:hover{
-color: red;
+#scanning a:hover{
+color:#54C2AE;
 }
 
-
-#main button:hover{
-color: red;
-}
 /*moved footer to the bottom of the page*/
 #footer{
 background-color: #CACFD2;
