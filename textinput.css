@@ -1,0 +1,149 @@
+#typing { 
+    color:#0B5345; 
+    text-decoration: none; 
+    font-weight: normal; 
+    font-size: 25px;
+    text-align: center;
+    margin-top: 270px;
+}
+
+#body {
+background-color: #EAFAF1;
+color: rgba(31,85,74,1);
+}
+/* made this positioning relative so that I can move the title around*/
+#header {
+color:#0B5345;
+width: auto;
+position: relative;
+}
+
+#logo{
+    margin-left: 33%;
+    float: left;
+    padding-bottom: 20px;
+}
+
+#header h1{
+    float: left;
+    padding-top: 15px;
+    margin-left: 30px;
+    font-family: Futura, "Trebuchet MS", Arial, sans-serif;
+}
+
+/*set navbar color*/
+#navbar {
+color:rgba(31,85,74,1);
+}
+
+/*took out bullet points and centered the links*/
+#navbar ul{
+list-style: none;
+text-align: center;
+margin-left: 400px;
+}
+
+/*puts the links next to each other*/
+#navbar li{
+display: inline;
+}
+
+/*changed the color, size, and spacing*/
+#navbar a{
+color: rgba(31,85,74,1);
+text-decoration: none;
+font-size: 20px;
+padding-right: 30px;
+float: right;
+margin-top: 45px;
+}
+
+#navbar a:hover{
+color: #54C2AE;
+}
+
+hr {
+    width: 100%;
+    background-color: rgba(31,85,74,1);
+    border-color: rgba(31,85,74,1);
+    height: .5px;
+}
+
+#info {
+left: 54px;
+top: 200px;
+margin-left: 350px;
+position: absolute;
+overflow: visible;
+font:GT Flexa VAR;
+width: 45%;
+white-space: nowrap;
+text-align: center;
+font-style: normal;
+font-weight: bold;
+color: rgba(31,85,74,1);
+}
+
+#info p{
+font-size: 50px;
+font-family: Futura, "Trebuchet MS", Arial, sans-serif;
+}
+
+#main{
+width:600px;
+float: right;
+color: #0B5345 ;
+font-size: xx-large;
+padding-right: 50px;
+padding-top: 30px;
+
+}
+/*puts each line on top of each other*/
+#main label{
+display: block;
+}
+
+
+#scanning{
+background-color: #1F554A;
+color: white;
+border: none;
+padding: 10px 15px;
+margin-top: 20px;
+margin-left: 635px;
+width: 175px;
+font-style: GT Flexa VAR;
+border-radius: 20px;
+padding-top: 12px;
+}
+
+/*made the link white*/
+#scanning a{
+color: white;
+text-decoration: none;
+}
+
+/*makes the start scanning button red when you hover over it*/
+#scanning a:hover{
+color:#54C2AE;
+}
+
+/*moved footer to the bottom of the page*/
+#footer{
+background-color: #CACFD2;
+width: 100%;
+position: absolute;
+top: 800px;
+}
+/*placed the logo and title side to side*/
+#footer h1{
+display: inline;
+margin-left: 5px;
+font-style: GT Flexa VAR;
+color: #0B5345 ;
+}
+
+#social{
+    float: right;
+    margin-top: 14px;
+}
