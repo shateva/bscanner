@@ -15,6 +15,7 @@ position: relative;
     margin-left: 48%;
     margin-right: auto;
     float: left;
+    padding-bottom: 20px;
 }
 
 
@@ -39,15 +40,22 @@ display: inline;
 #navbar a{
 color: rgba(31,85,74,1);
 text-decoration: none;
-font-size: 25px;
-padding-right: 25px;
+font-size: 20px;
+padding-right: 30px;
 float: right;
-margin-top: 35px;
+margin-top: 45px;
 }
+
 #navbar a:hover{
 color: #54C2AE;
 }
 
+hr {
+    width: 100%;
+    background-color: rgba(31,85,74,1);
+    border-color: rgba(31,85,74,1);
+    height: .5px;
+}
 #content{
 padding-left: 10px;
 }
@@ -95,7 +103,7 @@ background-color: #1F554A;
 color: white;
 border: none;
 padding: 10px 15px;
-margin-top: 380px;
+margin-top: 330px;
 margin-left: 625px;
 width: 175px;
 font-style: GT Flexa VAR;
@@ -119,7 +127,7 @@ color:#54C2AE;
 background-color: #CACFD2;
 width: 100%;
 position: absolute;
-top: 850px;
+top: 800px;
 }
 /*placed the logo and title side to side*/
 #footer h1{
@@ -127,4 +135,9 @@ display: inline;
 margin-left: 5px;
 font-style: GT Flexa VAR;
 color: #0B5345 ;
+}
+
+#social{
+    float: right;
+    margin-top: 14px;
 }
