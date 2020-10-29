@@ -6,32 +6,36 @@ color: rgba(31,85,74,1);
 }
 /* made this positioning relative so that I can move the title around*/
 #header {
-background-color: #EAFAF1;
 color:#0B5345;
-width: 800px;
+width: auto;
 margin-left: none;
 margin-right: auto;
 position: relative;
 }
+
+#logo{
+    margin-left: 600px;
+    margin-right: auto;
+    float: left;
+}
+
 #header h1{
-margin-left: 95px;
+margin-left: 500px;
 width: 150px;
 bottom: 0px;
 position: absolute;
 }
-#container{
-background-color:#EAFAF1;
-}
+
 /*set navbar color*/
 #navbar {
-background-color: lightgray;
+
 color:rgba(31,85,74,1);
 }
 /*took out bullet points and centered the links*/
 #navbar ul{
-padding: 0;
 list-style: none;
 text-align: center;
+margin-left: 400px;
 }
 /*puts the links next to each other*/
 #navbar li{
@@ -41,18 +45,23 @@ display: inline;
 #navbar a{
 color: rgba(31,85,74,1);
 text-decoration: none;
-font-size: 30px;
-padding-right: 50px;
+font-size: 25px;
+padding-right: 25px;
+float: right;
+margin-top: 100px;
 }
 #navbar a:hover{
 color: red;
 }
+
 #content{
 padding-left: 10px;
 }
+
 #info {
 left: 54px;
 top: 310px;
+margin-left: 350px;
 position: absolute;
 overflow: visible;
 font:GT Flexa VAR;
@@ -88,18 +97,22 @@ height: 400px;
 font-size: x-large;
 border: rgba(31,85,74,1) 5px solid;
 }
-#main button{
+
+#scanning{
 background-color: rgba(31,85,74,1);
 color: white;
 border: none;
 padding: 10px 15px;
+margin-top: 275px;
+margin-left: 625px;
 width: 175px;
 font-style: GT Flexa VAR;
 border-radius: 20px;
 padding-top: 12px;
 }
+
 /*made the link white*/
-#main a{
+#scanning a{
 color: white;
 text-decoration: none;
 }
@@ -117,7 +130,6 @@ color: red;
 #footer{
 background-color: #CACFD2;
 width: 100%;
-border: lightgray solid;
 position: absolute;
 top: 850px;
 }
