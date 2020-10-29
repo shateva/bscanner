@@ -7,6 +7,11 @@
     margin-top: 270px;
 }
 
+h1{
+    color: rgba(31,85,74,1);
+    text-align: center;
+}
+
 #content{
 	padding-left: 10px;
 }
@@ -103,8 +108,12 @@ font-family: Futura, "Trebuchet MS", Arial, sans-serif;
     border: rgba(31,85,74,1) 5px solid;
     float: right;
     font-size: x-large;
-    padding-right: 50px;
+    padding-right: 25px;
+    padding-left: 25px;
     padding-top: 30px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 30px;
 }
 
 /*puts each line on top of each other*/
@@ -154,10 +163,14 @@ color: #0B5345 ;
 
 #social{
     float: right;
-    margin-top: 14px;
+    margin-top: 90px;
+}
+
+#logo2{
+    margin-top: 80px;
 }
 
 #design{
-    margin-top: 100px;
+    margin-top: 30px;
 }
 
