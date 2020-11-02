@@ -1,4 +1,4 @@
-// runnung list of phrases we want to go thorough 
+// runnung list of phrases we want to go thorough
 
 var phrases = ['Illegal Aliens', 'Illegal Alien', 'Oriental', 'Orientals', 'Illegals', 'The blacks', 'The asians', 'The whites', 'The latinos']
 
@@ -13,25 +13,24 @@ const scanbtn = document.getElementById("scanning");
 const msg = document.getElementById("msg");
 
 // calls saveText function when you click the scan button
-scanbtn.addEventListener("click", scanText);
+scanning.addEventListener("click", scanText);
 
 // function that will scan the text
 function scanText(){
-    // saves variable to userInput
-    var userInput = textbox.value;    
-    console.log(userInput);
-    // if the userInput is blank, give an error message
-    if (userInput === '') {
-        msg.classList.add("error");
-        msg.innerHTML = 'Please enter text below';
-        setTimeout(() => msg.remove(), 2000);
-    }
-    
+// saves variable to userInput
+var userInput = textbox.value;
+console.log(userInput);
+if (userInput === '') {
+msg.classList.add("error");
+msg.innerHTML = 'Please enter text below';
 }
+
 // Goes through the scanned text, checks for phrases in scanned text
-function phraseChecker(){
-	if(scanText.includes(phrases)){
-		alert("Bias Checking Test");
-	}
+
+if(userInput.includes(phrases[1])){
+alert("Bias Checking Test");
+
+}
+
 }
 
