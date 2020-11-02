@@ -2,16 +2,24 @@
 // the textbox and the scan button
 const textbox = document.getElementById("txt");
 const scanbtn = document.getElementById("scanning");
+// allows us to give a pop up message for when nothing's entered in
+// the text box
+const msg = document.getElementById("msg");
 
 // calls saveText function when you click the scan button
 scanbtn.addEventListener("click", scanText);
 
 // function that will scan the text
 function scanText(){
+    // saves variable to userInput
     var userInput = textbox.value;    
     console.log(userInput);
     
+    if (userInput === '') {
+        msg.classList.add("error");
+        msg.innerHTML = 'Please enter text below';
+    }
     
 }
 
-saveText();
+scanText();

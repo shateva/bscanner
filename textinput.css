@@ -174,3 +174,10 @@ color: #0B5345 ;
     margin-top: 30px;
 }
 
+/* class for when the user types nothing in the box*/
+.error {
+    background-color: #EAFAF1;
+    color: rgb(240, 11, 11);
+    padding: 5px;
+    margin: 5px;
+  }
