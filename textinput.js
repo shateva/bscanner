@@ -1,5 +1,11 @@
+// runnung list of phrases we want to go thorough 
+
+var phrases = ['Illegal Aliens', 'Illegal Alien', 'Oriental', 'Orientals', 'Illegals', 'The blacks', 'The asians', 'The whites', 'The latinos']
+
+
 // global variables that allow us to access contents of
 // the textbox and the scan button
+
 const textbox = document.getElementById("txt");
 const scanbtn = document.getElementById("scanning");
 // allows us to give a pop up message for when nothing's entered in
@@ -21,5 +27,11 @@ function scanText(){
         setTimeout(() => msg.remove(), 2000);
     }
     
+}
+// Goes through the scanned text, checks for phrases in scanned text
+function phraseChecker(){
+	if(scanText.includes(phrases)){
+		alert("Bias Checking Test");
+	}
 }
 
