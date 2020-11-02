@@ -14,10 +14,11 @@ function scanText(){
     // saves variable to userInput
     var userInput = textbox.value;    
     console.log(userInput);
-    
+    // if the userInput is blank, give an error message
     if (userInput === '') {
         msg.classList.add("error");
         msg.innerHTML = 'Please enter text below';
+        setTimeout(() => msg.remove(), 2000);
     }
     
 }
