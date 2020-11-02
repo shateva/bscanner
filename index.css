@@ -144,7 +144,7 @@ color: #0B5345 ;
 }
 
 #design{
-    margin-top: 100px;
+    margin-top: 10%;
 }
 
 #logo2{
@@ -153,5 +153,36 @@ color: #0B5345 ;
 
 #social{
     float: right;
-    margin-top: 10px;
+    margin-top: 68%;
 }
+
+#whatBS{
+    color: #0B5345;
+    margin-top: 225px;
+    margin-left: 50px;
+    font-size: 75px;
+}
+
+#whatBS2{
+    
+    padding-bottom: 100px;
+    background-color: #0B5345;
+    color: #EAFAF1;
+    font-size: 40px;
+    padding-left: 50px;
+    padding-top: 50px;
+}
+
+.arrow {
+    border: solid #EAFAF1;
+    border-width: 0 5px 5px 0;
+    display: inline-block;
+    padding: 3px;
+    width: 50px;
+    height: 50px;
+  }
+  
+  .right {
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+  }
