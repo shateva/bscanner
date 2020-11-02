@@ -100,11 +100,11 @@ font-family: Futura, "Trebuchet MS", Arial, sans-serif;
 }
 
 
-#main{
+#txt{
     width:600px;
     margin-right: 375px;
 	color: #0B5345 ;
-	height: 500px;
+    height: 400px;
     border: rgba(31,85,74,1) 5px solid;
     float: right;
     font-size: x-large;
@@ -114,6 +114,7 @@ font-family: Futura, "Trebuchet MS", Arial, sans-serif;
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
     border-radius: 30px;
+    
 }
 
 /*puts each line on top of each other*/
