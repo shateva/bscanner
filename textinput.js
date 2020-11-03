@@ -27,9 +27,10 @@ msg.innerHTML = 'Please enter text below';
 
 // Goes through the scanned text, checks for phrases in scanned text
 
-if(userInput.includes(phrases[1])){
-alert("Bias Checking Test");
-
+for(var i = 0; i<=phrases.length; i++){
+    if(userInput.includes(phrases[i])){
+    alert("Bias Checking Test");
+    }
 }
 var instance = new Mark(document.querySelector(".content"));
 instance.mark("i");
