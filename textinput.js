@@ -31,6 +31,8 @@ if(userInput.includes(phrases[1])){
 alert("Bias Checking Test");
 
 }
+var instance = new Mark(document.querySelector(".content"));
+instance.mark("i");
 
 }
 

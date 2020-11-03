@@ -12,7 +12,7 @@ h1{
     text-align: center;
 }
 
-#content{
+.content{
 	padding-left: 10px;
 }
 
@@ -179,3 +179,8 @@ color: #0B5345 ;
     padding: 5px;
     margin: 5px;
   }
+
+  mark{
+    background: orange;
+    color: black;
+}
