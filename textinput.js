@@ -1,5 +1,6 @@
 // runnung list of phrases we want to go thorough
-var phrases = ['Illegal Aliens', 'Illegal Alien', 'Oriental', 'Orientals', 'Illegals', 'The blacks', 'The asians', 'The whites', 'The latinos']
+// everything must be lowercase
+var phrases = ['illegal aliens', 'illegal alien', 'oriental', 'orientals', 'illegals', 'the blacks', 'the asians', 'the whites', 'the latinos']
 
 
 // global variables that allow us to access contents of
@@ -17,7 +18,10 @@ scanning.addEventListener("click", scanText);
 // function that will scan the text
 function scanText() {
     // saves variable to userInput
-    var userInput = textbox.value;
+    // everything from the textbox is stored as lowercase 
+
+    var userInput = textbox.value.toLowerCase();
+
     console.log(userInput);
     if (userInput === '') {
         msg.classList.add("error");
