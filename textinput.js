@@ -1,6 +1,6 @@
 // running list of phrases we want to go thorough
 // everything must be lowercase
-// var phrases = ['illegal aliens', 'illegal alien', 'oriental', 'orientals', 'illegals', 'the blacks', 'the asians', 'the whites', 'the latinos']
+var phrases2 = ['illegal aliens', 'illegal alien', 'oriental', 'orientals', 'illegals', 'the blacks', 'the asians', 'the whites', 'the latinos']
 
 // phrases is now an object literal (same thing as a dictionary)
 // to access a phrase, for example 'illegal aliens', we'd say
@@ -93,12 +93,15 @@ function scanText() {
 
 //makes highlighting system highlight phrases regardless of capitalization
 var options = {
-    "caseSensitive": false
+    "caseSensitive": false,
+    "accuracy": {
+        "value": "exactly"}
+
 }
 
 //prints user input and highlights the found bias phrase
 function printLine(){
     document.getElementById("test").innerHTML = userInput;
     var instance = new Mark(document.querySelector("#test"));
-    instance.mark(phrases[i].phrase);
+    instance.mark(phrases2);
 }   
