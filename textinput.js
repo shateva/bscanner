@@ -65,13 +65,13 @@ const msg = document.getElementById("msg");
 
 // calls saveText function when you click the scan button
 scanning.addEventListener("click", scanText);
-
+var userInput;
 // function that will scan the text
 function scanText() {
     // saves variable to userInput
     // everything from the textbox is stored as lowercase 
 
-    var userInput = textbox.value.toLowerCase();
+    userInput = textbox.value.toLowerCase();
 
     console.log(userInput);
     if (userInput === '') {
@@ -84,10 +84,14 @@ function scanText() {
     for (var i = 0; i <= phrases.length; i++) {
         if (userInput.includes(phrases[i].phrase)) {
             alert("Bias Checking Test");
+            printLine();
         }
     }
-    var instance = new Mark(document.querySelector(".content"));
-    instance.mark("i");
 
 }
 
+function printLine(){
+    document.getElementById("test").innerHTML = userInput;
+    var instance = new Mark(document.querySelector("#test"));
+    instance.mark("i");
+}   
