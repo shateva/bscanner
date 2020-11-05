@@ -66,6 +66,7 @@ const msg = document.getElementById("msg");
 // calls saveText function when you click the scan button
 scanning.addEventListener("click", scanText);
 var userInput;
+var i;
 // function that will scan the text
 function scanText() {
     // saves variable to userInput
@@ -81,7 +82,7 @@ function scanText() {
 
     // Goes through the scanned text, checks for phrases in scanned text
 
-    for (var i = 0; i <= phrases.length; i++) {
+    for (i = 0; i <= phrases.length; i++) {
         if (userInput.includes(phrases[i].phrase)) {
             alert("Bias Checking Test");
             printLine();
@@ -90,8 +91,12 @@ function scanText() {
 
 }
 
+var options = {
+    "caseSensitive": false
+}
+
 function printLine(){
     document.getElementById("test").innerHTML = userInput;
     var instance = new Mark(document.querySelector("#test"));
-    instance.mark("i");
+    instance.mark(phrases[i].phrase);
 }   
