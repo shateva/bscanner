@@ -153,7 +153,7 @@ color: #0B5345 ;
 
 #social{
     float: right;
-    margin-top: 72%;
+    margin-top: 80%;
 }
 
 #whatBS{
@@ -192,4 +192,15 @@ color: #0B5345 ;
       float: right;
       margin-right: 100px;
       margin-top: 300px;
+  }
+
+  #video{
+      margin-left: 5%;
+      margin-top: 5%;
+      float: left;
+  }
+
+  #how{
+      float: right;
+      margin-top: 10%;
   }
