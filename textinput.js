@@ -1,7 +1,58 @@
-// runnung list of phrases we want to go thorough
+// running list of phrases we want to go thorough
 // everything must be lowercase
-var phrases = ['illegal aliens', 'illegal alien', 'oriental', 'orientals', 'illegals', 'the blacks', 'the asians', 'the whites', 'the latinos']
+// var phrases = ['illegal aliens', 'illegal alien', 'oriental', 'orientals', 'illegals', 'the blacks', 'the asians', 'the whites', 'the latinos']
 
+// phrases is now an object literal (same thing as a dictionary)
+// to access a phrase, for example 'illegal aliens', we'd say
+// phrases[0].phrase
+// to access the explanation, we say phrases[0].explanation
+var phrases = [
+    {
+        id: 0,
+        phrase: 'illegal aliens',
+        explanation: 'placeholder'
+    },
+    {
+        id: 1,
+        phrase: 'illegal alien',
+        explanation: 'placeholder'
+    },
+    {
+        id: 2,
+        phrase: 'oriental',
+        explanation: 'placeholder'
+    },
+    {
+        id: 3,
+        phrase: 'orientals',
+        explanation: 'placeholder'
+    },
+    {
+        id: 4,
+        phrase: 'illegals',
+        explanation: 'placeholder'
+    },
+    {
+        id: 5,
+        phrase: 'the blacks',
+        explanation: 'placeholder'
+    },
+    {
+        id: 6,
+        phrase: 'the asians',
+        explanation: 'placeholder'
+    },
+    {
+        id: 7,
+        phrase: 'the whites',
+        explanation: 'placeholder'
+    },
+    {
+        id: 8,
+        phrase: 'the latinos',
+        explanation: 'placeholder'
+    }
+];
 
 // global variables that allow us to access contents of
 // the textbox and the scan button
@@ -31,7 +82,7 @@ function scanText() {
     // Goes through the scanned text, checks for phrases in scanned text
 
     for (var i = 0; i <= phrases.length; i++) {
-        if (userInput.includes(phrases[i])) {
+        if (userInput.includes(phrases[i].phrase)) {
             alert("Bias Checking Test");
         }
     }
