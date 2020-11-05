@@ -91,10 +91,12 @@ function scanText() {
 
 }
 
+//makes highlighting system highlight phrases regardless of capitalization
 var options = {
     "caseSensitive": false
 }
 
+//prints user input and highlights the found bias phrase
 function printLine(){
     document.getElementById("test").innerHTML = userInput;
     var instance = new Mark(document.querySelector("#test"));
