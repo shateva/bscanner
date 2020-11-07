@@ -67,6 +67,9 @@ const msg = document.getElementById("msg");
 scanning.addEventListener("click", scanText);
 var userInput;
 var i;
+// array for the phrases found in userInput
+var phrasesFound = new Array();
+
 // function that will scan the text
 function scanText() {
     // saves variable to userInput
@@ -85,6 +88,8 @@ function scanText() {
     for (i = 0; i <= phrases.length; i++) {
         if (userInput.includes(phrases[i].phrase)) {
             alert("Bias Checking Test");
+            // pushes the phrase that was found to the array
+            phrasesFound.push(phrases[i].phrase);
             printLine();
         }
     }
