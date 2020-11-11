@@ -191,3 +191,38 @@ color: #0B5345 ;
     background: orange;
     color: black;
 }
+
+/*moves the start scanning heading to the left*/
+#userInput-heading{
+    float: left;
+    width: 50%;
+    
+}
+/*moves the start scanning heading to the left*/
+#userInput-heading h1{
+    text-align: left;
+    padding-left: 1em;
+}
+/*moves the all alerts heading to the left*/
+#alert-heading{
+    float: right;
+    width: 50%;
+    
+}
+/*moves the all alerts heading to the left*/
+#alert-heading h1{
+    text-align: left;
+    padding-left: 1em;
+}
+
+/* css for the userinput text in the results section*/
+.text-css{
+    float: left;
+    width: 50%;
+    background-color: #EAFAF1;
+    font-size: 20px;
+    color: black;
+    padding-left: 1.4em;
+    padding-right: 1.4em;
+
+}

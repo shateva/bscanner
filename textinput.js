@@ -63,8 +63,11 @@ const scanbtn = document.getElementById("scanning");
 // the text box
 const msg = document.getElementById("msg");
 
+// allows us to print the userInput text in the results section
+const text = document.getElementById("text");
+
 // calls saveText function when you click the scan button
-scanning.addEventListener("click", scanText);
+scanning.addEventListener("click", scanText)
 var userInput;
 var i;
 // array for the phrases found in userInput
@@ -83,6 +86,9 @@ function scanText() {
         msg.innerHTML = 'Please enter text below';
     }
 
+    
+    
+
     // Goes through the scanned text, checks for phrases in scanned text
 
     for (i = 0; i <= phrases.length; i++) {
@@ -91,8 +97,13 @@ function scanText() {
             // pushes the phrase that was found to the array
             phrasesFound.push(phrases[i].phrase);
             printLine();
+            
         }
     }
+    // prints text in the results section
+    text.classList.add("text-css");
+    text.innerHTML = textbox.value;
+
 
 }
 
@@ -110,3 +121,5 @@ function printLine(){
     var instance = new Mark(document.querySelector("#test"));
     instance.mark(phrases2);
 }   
+
+
