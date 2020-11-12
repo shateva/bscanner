@@ -195,9 +195,9 @@ color: #0B5345 ;
   }
 
   #video{
-      margin-left: 15%;
-      margin-top: 7%;
-      float: left;
+      margin-left: 28%;
+
+    
       border: dashed;
       border-color: rgba(31,85,74,1);
       padding: 2%;
@@ -246,4 +246,21 @@ color: #0B5345 ;
     /*makes the start scanning button red when you hover over it*/
     #scanning2 a:hover{
     color:#8fcdf1;
+    }
+
+    #what{
+        float: left;
+        margin-top: 10%;
+        margin-left: 20%;
+        text-align: center;
+        background-color: red;
+    }
+
+    #why{
+        float: right;
+        margin-top: 10%;
+        text-align: center;
+        background-color: red;
+        margin-right: 20%;
+    
     }
