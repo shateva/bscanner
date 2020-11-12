@@ -99,13 +99,14 @@ function scanText() {
             printLine();
             
         }
+
     }
     // prints text in the results section
     text.classList.add("text-css");
     text.innerHTML = textbox.value;
-
-
 }
+
+
 
 //makes highlighting system highlight phrases regardless of capitalization
 var options = {
