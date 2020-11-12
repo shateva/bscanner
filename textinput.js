@@ -98,11 +98,11 @@ function scanText() {
             phrasesFound.push(phrases[i].phrase);
             printLine();
             
-        } text.classList.add("text-css");
-        text.innerHTML = textbox.value;
+        }
     }
     // prints text in the results section
-    
+    text.classList.add("text-css");
+    text.innerHTML = textbox.value;
 
 
 }
