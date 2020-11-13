@@ -134,7 +134,7 @@ function scanText() {
     // clears phraseFound and userInput
     phrasesFound = new Array();
     userInput = ''; 
-
+}
 
 
 //makes highlighting system highlight phrases regardless of capitalization
@@ -150,5 +150,4 @@ function printLine(){
     document.getElementById("test").innerHTML = userInput;
     var instance = new Mark(document.querySelector("#test"));
     instance.mark(phrases2);
-}   
-
+}
