@@ -123,7 +123,7 @@ function scanText() {
                 // if there's a match, we add the alert and explanation
                 // text to the elements we made earlier in lines 69 & 70
                 alrt.appendChild(document.createTextNode('Alert ' + count));
-                explan.appendChild(document.createTextNode(phrases[1].explanation));
+                explan.appendChild(document.createTextNode(phrases[j].explanation));
                 // then we add the text to the elements we made in lines 
                 // 67 and 68
                 alert.appendChild(alrt);
