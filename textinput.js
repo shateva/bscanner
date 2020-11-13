@@ -64,10 +64,8 @@ const scanbtn = document.getElementById("scanning");
 const msg = document.getElementById("msg");
 
 // used for making the alerts later
-const alert = document.querySelector("#alert");
-const explanation = document.querySelector("#explanation");
-const alrt = document.createElement('p');
-const explan = document.createElement('p');
+let alert = document.querySelector("#alert");
+let alrt = document.createElement('p');
 
 // calls saveText function when you click the scan button
 scanning.addEventListener("click", scanText)
@@ -80,13 +78,10 @@ var phrasesFound = new Array();
 function scanText() {
     // removes any alerts that already exist so that
     // alerts aren't repeated
-    while (alrt.hasChildNodes()) {   
-        alrt.removeChild(alrt.firstChild);
+    while (alert.hasChildNodes()) {   
+        alert.removeChild(alert.firstChild);
       }
-    while (explan.hasChildNodes()) {   
-        explan.removeChild(explan.firstChild);
-      }
-    
+ 
     // saves variable to userInput
     // everything from the textbox is stored as lowercase 
     userInput = textbox.value.toLowerCase();
@@ -103,6 +98,7 @@ function scanText() {
             //alert("Bias Checking Test");
             // pushes the phrase that was found to the array
             phrasesFound.push(phrases[i].phrase);
+            console.log(phrasesFound);
             printLine();     
         }
         else {
@@ -122,12 +118,11 @@ function scanText() {
                 count++;
                 // if there's a match, we add the alert and explanation
                 // text to the elements we made earlier in lines 69 & 70
-                alrt.appendChild(document.createTextNode('Alert ' + count));
-                explan.appendChild(document.createTextNode(phrases[j].explanation));
+                alrt = document.createElement('p');
+                alrt.appendChild(document.createTextNode('Alert ' + count + ' '  + phrases[j].explanation));
                 // then we add the text to the elements we made in lines 
                 // 67 and 68
                 alert.appendChild(alrt);
-                explanation.appendChild(explan);
             }
         }
     }
