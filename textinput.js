@@ -108,7 +108,9 @@ function scanText() {
         else {
             printLine();
         }
+
     }
+<<<<<<< HEAD
 
     //phrasesFound.reverse();
     console.log(phrasesFound);
@@ -134,9 +136,14 @@ function scanText() {
     // clears phraseFound and userInput
     phrasesFound = new Array();
     userInput = ''; 
-
-
+=======
+    // prints text in the results section
+    text.classList.add("text-css");
+    text.innerHTML = textbox.value;
 }
+>>>>>>> e9e50f4b9e84d4dd3858657f82f9cdf9dc267a37
+
+
 
 //makes highlighting system highlight phrases regardless of capitalization
 var options = {
