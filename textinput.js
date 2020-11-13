@@ -126,6 +126,13 @@ function scanText() {
             }
         }
     }
+    if (count === 0) {
+        alrt = document.createElement('p');
+        alrt.appendChild(document.createTextNode('We got nothing'));
+        alert.appendChild(alrt);
+    }
+
+
     // clears phraseFound and userInput
     phrasesFound = new Array();
     userInput = ''; 
