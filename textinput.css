@@ -181,7 +181,6 @@ color: #0B5345 ;
 
 /* class for when the user types nothing in the box*/
 .error {
-    background-color: #EAFAF1;
     color: rgb(240, 11, 11);
     padding: 5px;
     margin: 5px;
@@ -216,13 +215,15 @@ color: #0B5345 ;
 }
 
 /* css for the userinput text in the results section*/
-.text-css{
-    float: left;
+#test{
     width: 50%;
-    background-color: #EAFAF1;
-    font-size: 20px;
+    font-size: 18px;
     color: black;
     padding-left: 1.4em;
     padding-right: 1.4em;
 
+}
+
+#box{
+    background: white;
 }

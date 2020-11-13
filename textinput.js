@@ -63,8 +63,11 @@ const scanbtn = document.getElementById("scanning");
 // the text box
 const msg = document.getElementById("msg");
 
-// allows us to print the userInput text in the results section
-const text = document.getElementById("text");
+// used for making the alerts later
+const alert = document.querySelector("#alert");
+const explanation = document.querySelector("#explanation");
+const alrt = document.createElement('p');
+const explan = document.createElement('p');
 
 // calls saveText function when you click the scan button
 scanning.addEventListener("click", scanText)
@@ -75,9 +78,17 @@ var phrasesFound = new Array();
 
 // function that will scan the text
 function scanText() {
+    // removes any alerts that already exist so that
+    // alerts aren't repeated
+    while (alrt.hasChildNodes()) {   
+        alrt.removeChild(alrt.firstChild);
+      }
+    while (explan.hasChildNodes()) {   
+        explan.removeChild(explan.firstChild);
+      }
+    
     // saves variable to userInput
     // everything from the textbox is stored as lowercase 
-
     userInput = textbox.value.toLowerCase();
 
     console.log(userInput);
@@ -86,23 +97,43 @@ function scanText() {
         msg.innerHTML = 'Please enter text below';
     }
 
-    
-    
-
     // Goes through the scanned text, checks for phrases in scanned text
-
-    for (i = 0; i <= phrases.length; i++) {
+    for (i = 0; i < phrases.length; i++) {
         if (userInput.includes(phrases[i].phrase)) {
-            alert("Bias Checking Test");
+            //alert("Bias Checking Test");
             // pushes the phrase that was found to the array
             phrasesFound.push(phrases[i].phrase);
+            printLine();     
+        }
+        else {
             printLine();
-            
         }
     }
-    // prints text in the results section
-    text.classList.add("text-css");
-    text.innerHTML = textbox.value;
+
+    //phrasesFound.reverse();
+    console.log(phrasesFound);
+    // used for counting the alerts
+    var count = 0;
+    // double loop goes through phraseFound array to get the matching
+    // index in the phrases dictionary
+    for (i = 0; i < phrases.length; i++){
+        for (j = 0; j < phrases.length; j++) {
+            if (phrasesFound[i] === phrases[j].phrase) {
+                count++;
+                // if there's a match, we add the alert and explanation
+                // text to the elements we made earlier in lines 69 & 70
+                alrt.appendChild(document.createTextNode('Alert ' + count));
+                explan.appendChild(document.createTextNode(phrases[1].explanation));
+                // then we add the text to the elements we made in lines 
+                // 67 and 68
+                alert.appendChild(alrt);
+                explanation.appendChild(explan);
+            }
+        }
+    }
+    // clears phraseFound and userInput
+    phrasesFound = new Array();
+    userInput = ''; 
 
 
 }
@@ -121,5 +152,4 @@ function printLine(){
     var instance = new Mark(document.querySelector("#test"));
     instance.mark(phrases2);
 }   
-
 
