@@ -9,46 +9,36 @@ var phrases2 = ['illegal aliens', 'illegal alien', 'oriental', 'orientals', 'ill
 var phrases = [
     {
         id: 0,
-        phrase: 'illegal aliens',
-        explanation: 'placeholder'
-    },
-    {
-        id: 1,
         phrase: 'illegal alien',
         explanation: 'placeholder'
     },
     {
-        id: 2,
+        id: 1,
         phrase: 'oriental',
         explanation: 'placeholder'
     },
     {
-        id: 3,
-        phrase: 'orientals',
-        explanation: 'placeholder'
-    },
-    {
-        id: 4,
+        id: 2,
         phrase: 'illegals',
         explanation: 'placeholder'
     },
     {
-        id: 5,
+        id: 3,
         phrase: 'the blacks',
         explanation: 'placeholder'
     },
     {
-        id: 6,
+        id: 4,
         phrase: 'the asians',
         explanation: 'placeholder'
     },
     {
-        id: 7,
+        id: 5,
         phrase: 'the whites',
         explanation: 'placeholder'
     },
     {
-        id: 8,
+        id: 6,
         phrase: 'the latinos',
         explanation: 'placeholder'
     }
