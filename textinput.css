@@ -222,7 +222,8 @@ color: #0B5345 ;
     padding-left: 1.4em;
     padding-right: 1.4em;
     line-height: 2em;
-
+    background: white;
+    border-radius: 20px;
 }
 
 #alert p{

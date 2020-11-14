@@ -60,6 +60,8 @@ let alrt = document.createElement('p');
 // calls saveText function when you click the scan button
 scanning.addEventListener("click", scanText)
 var userInput;
+// temp is the same as userInput, but not lowercase
+var temp;
 var i;
 // array for the phrases found in userInput
 var phrasesFound = new Array();
@@ -73,7 +75,8 @@ function scanText() {
       }
  
     // saves variable to userInput
-    // everything from the textbox is stored as lowercase 
+    // everything from the textbox is stored as lowercase
+    temp = textbox.value;
     userInput = textbox.value.toLowerCase();
 
     console.log(userInput);
@@ -96,8 +99,6 @@ function scanText() {
         }
 
     }
-    //phrasesFound.reverse();
-    console.log(phrasesFound);
     // used for counting the alerts
     var count = 0;
     // double loop goes through phraseFound array to get the matching
@@ -108,11 +109,19 @@ function scanText() {
                 count++;
                 // if there's a match, we add the alert and explanation
                 // text to the elements we made earlier in lines 69 & 70
+                // we also add 2 line breaks in between the alert
+                // and explanation
                 alrt = document.createElement('p');
-                alrt.appendChild(document.createTextNode('Alert ' + count + ' '  + phrases[j].explanation));
-                // then we add the text to the elements we made in lines 
-                // 67 and 68
+                let linebreak = document.createElement('br');
+                let linebreak2 = document.createElement('br');
+                alrt.appendChild(document.createTextNode('Biased Phrase Found: ' + phrases[j].phrase));
+                alrt.appendChild(linebreak);
+                alrt.appendChild(linebreak2);
+                alrt.appendChild(document.createTextNode(phrases[j].explanation));
+                // then we add the text to the element we made in line 57
                 alert.appendChild(alrt);
+                
+                
             }
         }
     }
@@ -139,7 +148,7 @@ var options = {
 
 //prints user input and highlights the found bias phrase
 function printLine(){
-    document.getElementById("test").innerHTML = userInput;
+    document.getElementById("test").innerHTML = temp;
     var instance = new Mark(document.querySelector("#test"));
     instance.mark(phrases2);
 }
