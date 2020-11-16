@@ -1,22 +1,11 @@
 
 
-body
-{
-  margin: 0;
-  padding: 0;
-  
-  /* make it look decent enough */
-  background: #232323;
-  color: #cdcdcd;
-  font-family: "Avenir Next", "Avenir", sans-serif;
-}
-
 #menuToggle
 {
-  display: block;
-  position: relative;
-  top: 50px;
-  left: 50px;
+    display: block;
+    margin-top: 4%;
+    margin-left: 2%;
+    position: relative;
   
   z-index: 1;
   
@@ -165,12 +154,9 @@ body
 background-color: #EAFAF1;
 color: rgba(31,85,74,1);
 }
+
 /* made this positioning relative so that I can move the title around*/
-#header {
-color:#0B5345;
-width: auto;
-position: relative;
-}
+
 
 #logo{
     margin-left: 47%;
@@ -178,12 +164,6 @@ position: relative;
     padding-bottom: 20px;
 }
 
-#header h1{
-    float: left;
-    padding-top: 15px;
-    margin-left: 30px;
-    font-family: Futura, "Trebuchet MS", Arial, sans-serif;
-}
 
 /*set navbar color*/
 #navbar {
@@ -191,30 +171,8 @@ color:rgba(31,85,74,1);
 }
 
 /*took out bullet points and centered the links*/
-#navbar ul{
-list-style: none;
-text-align: center;
-margin-left: 400px;
-}
 
-/*puts the links next to each other*/
-#navbar li{
-display: inline;
-}
 
-/*changed the color, size, and spacing*/
-#navbar a{
-color: rgba(31,85,74,1);
-text-decoration: none;
-font-size: 20px;
-padding-right: 30px;
-float: right;
-margin-top: 45px;
-}
-
-#navbar a:hover{
-color: #8fcdf1;
-}
 
 hr {
     width: 100%;
@@ -290,12 +248,7 @@ position: absolute;
 top: 550px;
 }
 /*placed the logo and title side to side*/
-#footer h1{
-display: inline;
-margin-left: 5px;
-font-style: GT Flexa VAR;
-color: #0B5345 ;
-}
+
 
 #design{
     margin-top: 15%;
