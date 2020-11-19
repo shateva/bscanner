@@ -4,7 +4,7 @@
   position: fixed; /* Set the navbar to fixed position */
   top: 0; /* Position the navbar at the top of the page */
   width: 100%; /* Full width */
-  z-index: 900;
+  z-index: 800;
 }
 
 html {
@@ -351,12 +351,13 @@ top: 550px;
     color: white;
     border: none;
     padding: 10px 15px;
-
-
+    z-index: 2000;
+    position: relative;
     width: 175px;
     font-style: GT Flexa VAR;
     border-radius: 20px;
     padding-top: 12px;
+
     }
     
     /*made the link white*/
