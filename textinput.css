@@ -254,7 +254,7 @@ font-family: Futura, "Trebuchet MS", Arial, sans-serif;
     -moz-box-shadow: none;
     box-shadow: none;
     border: none;
-    overflow: auto;
+    overflow: hidden;
     outline: none;
 
     resize: none; /*remove the resize handle on the bottom right*/
