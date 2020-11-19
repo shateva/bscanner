@@ -180,5 +180,5 @@ var options = {
 function printLine(){
     document.getElementById("test").innerHTML = temp;
     var instance = new Mark(document.querySelector("#test"));
-    instance.mark(phrases2, {accuracy: "exactly", separateWordSearch: false,});
+    instance.mark(phrases2, {accuracy: "partially", separateWordSearch: false,});
 }
