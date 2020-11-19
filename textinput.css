@@ -241,16 +241,24 @@ font-family: Futura, "Trebuchet MS", Arial, sans-serif;
 
 
 #txt{
-    width:650px;
-    margin-right: 25%;
+    width:45%;
+    margin-right: 27%;
 	color: #0B5345 ;
-    height: 300px;
-    border: gray;
+    height: 35%;
     float: right;
     font-size: x-large;
     padding-right: 25px;
     padding-left: 20px;
     padding-top: 30px;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    border: none;
+    overflow: auto;
+    outline: none;
+
+    resize: none; /*remove the resize handle on the bottom right*/
+
 
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
@@ -269,12 +277,11 @@ background-color: #1F554A;
 color: white;
 border: none;
 padding: 10px 15px;
-margin-top: 20px;
-margin-left: 47%;
 width: 125px;
 font-style: GT Flexa VAR;
 border-radius: 20px;
 padding-top: 12px;
+margin-left: 40%;
 }
 
 /*made the link white*/
@@ -376,4 +383,15 @@ color: #0B5345 ;
 
 #arrow {
     padding-left: 1em;
+}
+
+#buttonBack{
+    width: 44.5%;
+    margin-left: 28.5%;
+    background: white;
+    padding-bottom: 2%;
+
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 10px;
 }
