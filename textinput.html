@@ -14,23 +14,44 @@
       <!-- added the logo in the title next to B Checker -->
       <link rel="shortcut icon" href="ps_logo_2.png" type="image/png">
       <!--made the logo part of the header-->
-      <div id= "header">
-         <h1>B Scanner</h1>
-         <img id= "logo" src="ps_logo3.png" alt= "Logo">
-         <div id= "navbar">
-             <!--navigation-->
-            <ul>
-               <li><a href= "#">Contact</a></li>
-               <li><a href= "#">About</a></li>
-               <li><a href= "#">How</a></li>
-               <li><a href= "index.html">Home</a></li>
-            </ul>
-         </div>
-      
-      </div>
       </header>
       <!--moved logo to the head-->
-      <hr>
+      <nav role="navigation">
+         <div id="menuToggle">
+           <!--
+           A fake / hidden checkbox is used as click reciever,
+           so you can use the :checked selector on it.
+           -->
+           <input type="checkbox" />
+           
+           <!--
+           Some spans to act as a hamburger.
+           
+           They are acting like a real hamburger,
+           not that McDonalds stuff.
+           -->
+           <span></span>
+           <span></span>
+           <span></span>
+           
+           <!--
+           Too bad the menu has to be inside of the button
+           but hey, it's pure CSS magic.
+           -->
+           <ul id="menu">
+             <a href="index.html"><li>Home</li></a>
+             <a href="#"><li>About</li></a>
+             <a href="#"><li>How</li></a>
+             <a href="#"><li>Contact</li></a>
+           </ul>
+         </div>
+       </nav>
+
+       <div id= "header">
+         
+         <img id= "logo" src="ps_logo3.png" alt= "Logo">
+      
+      </div>
    
          <!--added some more info-->
          <div class = "content">
@@ -41,9 +62,8 @@
             <!--pop up for when the user doesn't enter anything in the textbox-->
             <div id="msg"></div>
                <!--added text box with example text and a button to submit-->
-               <textarea id= "txt" name="text-box" placeholder="With about a week until Election Day, 
-					labeling their opponents as radicals has become the 
-					closing message for Republicans in tight races around the country. While Democrats have focused on health care access and getting the coronavirus pandemic under control, most Republicans have settled on a message of grievance that Democratic governance would bring socialism and left-wing extremism."></textarea>
+               <textarea id= "txt" rows="4" name="text-box">With about a week until Election Day, labeling their opponents as radicals has become the closing message for Republicans in tight races around the country. While Democrats have focused on health care access and getting the coronavirus pandemic under control, most Republicans have settled on a message of grievance that Democratic governance would bring socialism and left-wing extremism.
+            </textarea>
 				
          </div>
 
