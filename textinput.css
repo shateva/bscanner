@@ -305,13 +305,10 @@ color: #0B5345 ;
 
 #social{
     float: right;
-    margin-top: 10%;
+    margin-top: 15%;
 }
 
 
-#design{
-    margin-top: 5%;
-}
 
 /* class for when the user types nothing in the box*/
 .error {
