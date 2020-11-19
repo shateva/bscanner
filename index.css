@@ -1,9 +1,21 @@
 
+#navi{
+
+  position: fixed; /* Set the navbar to fixed position */
+  top: 0; /* Position the navbar at the top of the page */
+  width: 100%; /* Full width */
+  z-index: 900;
+}
+
+html {
+  scroll-behavior: smooth;
+}
 
 #menuToggle
 {
     display: block;
-    margin-top: 4%;
+    margin-top: 2%;
+    margin-bottom: 2%;
     margin-left: 2%;
     position: relative;
   
@@ -147,7 +159,7 @@
     font-weight: normal; 
     font-size: 25px;
     text-align: center;
-    margin-top: 25%;
+    margin-top: 20%;
 }
 
 #body {
@@ -159,9 +171,9 @@ color: rgba(31,85,74,1);
 
 
 #logo{
-    margin-left: 47%;
-    float: left;
+    margin-left: 40%;
     padding-bottom: 20px;
+
 }
 
 
@@ -199,6 +211,7 @@ color: rgba(31,85,74,1);
 #info p{
 font-size: 50px;
 font-family: Futura, "Trebuchet MS", Arial, sans-serif;
+
 }
 
 #main{
@@ -265,8 +278,9 @@ top: 550px;
 
 #whatBS{
     color: #0B5345;
-    margin-top: 225px;
+    margin-top: 18%;
     margin-left: 50px;
+    padding-top: 3%;
     font-size: 75px;
 }
 
@@ -298,7 +312,7 @@ top: 550px;
   .website{
       float: right;
       margin-right: 100px;
-      margin-top: 15%;
+      margin-top: 21%;
   }
 
   #video{
@@ -310,16 +324,17 @@ top: 550px;
       padding: 2%;
   }
 
-  #how{
+  .how{
       float: right;
       margin-right: 10%;
   }
 
-  .how{
+  #how{
       text-align: center;
       margin-top: 10%;
       color:rgba(31,85,74,1);
       font-size: 300%;
+      padding-top:2%;
   }
 
   #begin{
