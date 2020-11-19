@@ -6,6 +6,7 @@ var phrases2 = ['illegal aliens', 'illegal alien', 'oriental', 'orientals', 'ill
 // to access a phrase, for example 'illegal aliens', we'd say
 // phrases[0].phrase
 // to access the explanation, we say phrases[0].explanation
+
 var phrases = [
     {
         id: 0,
@@ -154,7 +155,24 @@ function scanText() {
                 
             }
         }
+    
     }
+
+    function getOccurrence(array, value) {
+        var score = 0;
+        array.forEach((v) => (v === value && score++));
+        return score;
+    }
+
+    var id_0 = (getOccurrence(phrasesFound, "illegal alien"))
+    var id_1 = (getOccurrence(phrasesFound, "oriental"));
+    var id_2 = (getOccurrence(phrasesFound, "illegals"));  
+    var id_3 = (getOccurrence(phrasesFound, "the blacks"));
+    var id_4 = (getOccurrence(phrasesFound, "the asians"));  
+    var id_5 = (getOccurrence(phrasesFound, "the whites"));
+    var id_6 = (getOccurrence(phrasesFound, "the latinos"));
+
+
     if (count === 0) {
         alrt = document.createElement('p');
         alrt.appendChild(document.createTextNode('We got nothing'));
@@ -166,6 +184,7 @@ function scanText() {
     phrasesFound = new Array();
     userInput = ''; 
 }
+
 
 
 //makes highlighting system highlight phrases regardless of capitalization
