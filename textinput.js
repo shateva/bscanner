@@ -170,6 +170,7 @@ function scanText() {
 
     //scores nummbers of times word is used in PhrasesFound
 
+    /*
     function getOccurrence(array, value) {
             var score = 0;
             array.forEach((v) => (v === value && score++));
@@ -183,6 +184,8 @@ function scanText() {
     id_4 = (getOccurrence(phrasesFound, "the asians"));  
     id_5 = (getOccurrence(phrasesFound, "the whites"));
     id_6 = (getOccurrence(phrasesFound, "the latinos"));
+
+    */
 
 
     if (count === 0) {
@@ -208,6 +211,6 @@ var options = {
 //prints user input and highlights the found bias phrase
 function printLine(){
     document.getElementById("test").innerHTML = temp;
-    var instance = new Mark1(document.querySelector("#test"));
-    instance.mark1(phrases2, {accuracy: "partially", separateWordSearch: false,});
+    var instance = new Mark(document.querySelector("#test"));
+    instance.mark(phrases2, {accuracy: "partially", separateWordSearch: false,});
 }
