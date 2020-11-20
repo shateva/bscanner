@@ -396,3 +396,8 @@ color: #0B5345 ;
     -moz-border-radius: 5px;
     border-radius: 10px;
 }
+
+mark{
+    background: yellow;
+    color: black;
+}
