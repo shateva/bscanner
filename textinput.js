@@ -67,6 +67,16 @@ var i;
 // array for the phrases found in userInput
 var phrasesFound = new Array();
 
+var id_0;
+var id_1; 
+var id_2; 
+var id_3;
+var id_4;
+var id_5; 
+var id_6;
+
+
+
 // scrolls the page down, idk how it works
 function scroll(target, duration) {
     var target = document.querySelector(target);
@@ -158,19 +168,21 @@ function scanText() {
     
     }
 
-    function getOccurrence(array, value) {
-        var score = 0;
-        array.forEach((v) => (v === value && score++));
-        return score;
-    }
+    //scores nummbers of times word is used in PhrasesFound
 
-    var id_0 = (getOccurrence(phrasesFound, "illegal alien"))
-    var id_1 = (getOccurrence(phrasesFound, "oriental"));
-    var id_2 = (getOccurrence(phrasesFound, "illegals"));  
-    var id_3 = (getOccurrence(phrasesFound, "the blacks"));
-    var id_4 = (getOccurrence(phrasesFound, "the asians"));  
-    var id_5 = (getOccurrence(phrasesFound, "the whites"));
-    var id_6 = (getOccurrence(phrasesFound, "the latinos"));
+    function getOccurrence(array, value) {
+            var score = 0;
+            array.forEach((v) => (v === value && score++));
+            return score;
+        }
+
+    id_0 = (getOccurrence(phrasesFound, "illegal alien"))
+    id_1 = (getOccurrence(phrasesFound, "oriental"));
+    id_2 = (getOccurrence(phrasesFound, "illegals"));  
+    id_3 = (getOccurrence(phrasesFound, "the blacks"));
+    id_4 = (getOccurrence(phrasesFound, "the asians"));  
+    id_5 = (getOccurrence(phrasesFound, "the whites"));
+    id_6 = (getOccurrence(phrasesFound, "the latinos"));
 
 
     if (count === 0) {
@@ -185,8 +197,6 @@ function scanText() {
     userInput = ''; 
 }
 
-
-
 //makes highlighting system highlight phrases regardless of capitalization
 var options = {
     "caseSensitive": false,
@@ -198,6 +208,6 @@ var options = {
 //prints user input and highlights the found bias phrase
 function printLine(){
     document.getElementById("test").innerHTML = temp;
-    var instance = new Mark(document.querySelector("#test"));
-    instance.mark(phrases2, {accuracy: "partially", separateWordSearch: false,});
+    var instance = new Mark1(document.querySelector("#test"));
+    instance.mark1(phrases2, {accuracy: "partially", separateWordSearch: false,});
 }
