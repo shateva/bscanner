@@ -95,6 +95,8 @@ function scroll(target, duration) {
 
 // function that will scan the text
 function scanText() {
+    document.getElementById("userInput-heading2").innerHTML = "Start Scanning...";
+    document.getElementById("alert-heading2").innerHTML = "All alerts";
     // scrolling
     scroll("#scanning", 500);
 

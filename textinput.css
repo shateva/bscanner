@@ -263,7 +263,6 @@ font-family: Futura, "Trebuchet MS", Arial, sans-serif;
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
     border-radius: 10px;
-    
 }
 
 /*puts each line on top of each other*/
@@ -395,4 +394,9 @@ color: #0B5345 ;
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
     border-radius: 10px;
+}
+
+#greenbox{
+    background-color:rgba(31,85,74,1);
+    height: 16em;
 }
