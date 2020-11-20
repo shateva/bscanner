@@ -6,6 +6,7 @@ var phrases2 = ['illegal aliens', 'illegal alien', 'oriental', 'orientals', 'ill
 // to access a phrase, for example 'illegal aliens', we'd say
 // phrases[0].phrase
 // to access the explanation, we say phrases[0].explanation
+
 var phrases = [
     {
         id: 0,
@@ -65,6 +66,16 @@ var temp;
 var i;
 // array for the phrases found in userInput
 var phrasesFound = new Array();
+
+var id_0;
+var id_1; 
+var id_2; 
+var id_3;
+var id_4;
+var id_5; 
+var id_6;
+
+
 
 // scrolls the page down, idk how it works
 function scroll(target, duration) {
@@ -156,7 +167,29 @@ function scanText() {
                 
             }
         }
+    
     }
+
+    //scores nummbers of times word is used in PhrasesFound
+
+    /*
+    function getOccurrence(array, value) {
+            var score = 0;
+            array.forEach((v) => (v === value && score++));
+            return score;
+        }
+
+    id_0 = (getOccurrence(phrasesFound, "illegal alien"))
+    id_1 = (getOccurrence(phrasesFound, "oriental"));
+    id_2 = (getOccurrence(phrasesFound, "illegals"));  
+    id_3 = (getOccurrence(phrasesFound, "the blacks"));
+    id_4 = (getOccurrence(phrasesFound, "the asians"));  
+    id_5 = (getOccurrence(phrasesFound, "the whites"));
+    id_6 = (getOccurrence(phrasesFound, "the latinos"));
+
+    */
+
+
     if (count === 0) {
         alrt = document.createElement('p');
         alrt.appendChild(document.createTextNode('We got nothing'));
@@ -168,7 +201,6 @@ function scanText() {
     phrasesFound = new Array();
     userInput = ''; 
 }
-
 
 //makes highlighting system highlight phrases regardless of capitalization
 var options = {
