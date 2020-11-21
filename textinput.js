@@ -78,8 +78,6 @@ var id_6;
 
 
 
-
-
 // function that will scan the text
 function scanText() {
     document.getElementById("userInput-heading2").innerHTML = "Start Scanning...";
@@ -172,10 +170,18 @@ function scanText() {
         alert.appendChild(alrt);
     }
 
+   
 
     // clears phraseFound and userInput
     phrasesFound = new Array();
     userInput = ''; 
+
+}
+
+//counts the number of phrase occurences
+function countString(hold, phraseHold){
+    let count = (hold.match(/the/g) || []).length;
+    console.log(count);
 }
 
 //makes highlighting system highlight phrases regardless of capitalization
@@ -190,5 +196,12 @@ var options = {
 function printLine(){
     document.getElementById("test").innerHTML = temp;
     var instance = new Mark(document.querySelector("#test"));
-    instance.mark(phrases2, {accuracy: "partially", separateWordSearch: false,});
+    for (i=0; i<=phrases2.length; i++){
+        if (phrasesFound.includes(phrases2[i])){
+            instance.mark(phrases2, {accuracy: "partially", separateWordSearch: false,});
+        }
+        
+    }
+
+
 }
