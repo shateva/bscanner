@@ -242,7 +242,7 @@ font-family: Futura, "Trebuchet MS", Arial, sans-serif;
 
 #txt{
     width:45%;
-    margin-right: 27%;
+    margin-left: 27.5%;
 	color: #0B5345 ;
     height: 35%;
     float: right;
@@ -256,7 +256,8 @@ font-family: Futura, "Trebuchet MS", Arial, sans-serif;
     border: none;
     overflow: hidden;
     outline: none;
-
+    position: absolute;
+    z-index: 30;
     resize: none; /*remove the resize handle on the bottom right*/
 
 
@@ -386,19 +387,29 @@ color: #0B5345 ;
 
 #buttonBack{
     width: 44.5%;
-    margin-left: 28.5%;
+    margin-left: 28.2%;
     background: white;
     padding-bottom: 2%;
     padding-top: 7%;
-
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
     border-radius: 10px;
+    float: right;
+    position: absolute;
+    z-index: 3;
+    padding-left: .2%;
+    padding-right: .3%;
 }
+
 
 #greenbox{
     background-color:rgba(31,85,74,1);
     height: 16em;
+    float: left;
+    width: 100%;
+    position: absolute;
+    z-index: 1;
+    margin-bottom: 40%;
 }
 mark{
     background: yellow;
