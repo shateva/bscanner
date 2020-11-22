@@ -96,13 +96,13 @@ function scanText() {
 
     // counts the number of times biased word was used in the userInput
     // saves the number to id_#
-    id_0 = (userInput.match(/illegal alien/g) || []).length
-    id_1 = (userInput.match(/oriental/g) || []).length
-    id_2 = (userInput.match(/illegals/g) || []).length
-    id_3 = (userInput.match(/the blacks/g) || []).length
-    id_4 = (userInput.match(/the asians/g) || []).length
-    id_5 = (userInput.match(/the whites/g) || []).length
-    id_6 = (userInput.match(/the latinos/g) || []).length
+    id_0 = (userInput.match(/illegal alien/g) || []).length.toString()
+    id_1 = (userInput.match(/oriental/g) || []).length.toString()
+    id_2 = (userInput.match(/illegals/g) || []).length.toString()
+    id_3 = (userInput.match(/the blacks/g) || []).length.toString()
+    id_4 = (userInput.match(/the asians/g) || []).length.toString()
+    id_5 = (userInput.match(/the whites/g) || []).length.toString()
+    id_6 = (userInput.match(/the latinos/g) || []).length.toString()
 
     console.log(userInput);
     if (userInput === '') {
