@@ -76,10 +76,6 @@ var id_4;
 var id_5; 
 var id_6;
 
-
-
-
-
 // function that will scan the text
 function scanText() {
     document.getElementById("userInput-heading2").innerHTML = "Start Scanning...";
@@ -97,6 +93,16 @@ function scanText() {
     // everything from the textbox is stored as lowercase
     temp = textbox.value;
     userInput = textbox.value.toLowerCase();
+
+    // counts the number of times biased word was used in the userInput
+    // saves the number to id_#
+    id_0 = (userInput.match(/illegal alien/g) || []).length
+    id_1 = (userInput.match(/oriental/g) || []).length
+    id_2 = (userInput.match(/illegals/g) || []).length
+    id_3 = (userInput.match(/the blacks/g) || []).length
+    id_4 = (userInput.match(/the asians/g) || []).length
+    id_5 = (userInput.match(/the whites/g) || []).length
+    id_6 = (userInput.match(/the latinos/g) || []).length
 
     console.log(userInput);
     if (userInput === '') {
@@ -146,32 +152,11 @@ function scanText() {
     
     }
 
-    //scores nummbers of times word is used in PhrasesFound
-
-    /*
-    function getOccurrence(array, value) {
-            var score = 0;
-            array.forEach((v) => (v === value && score++));
-            return score;
-        }
-
-    id_0 = (getOccurrence(phrasesFound, "illegal alien"))
-    id_1 = (getOccurrence(phrasesFound, "oriental"));
-    id_2 = (getOccurrence(phrasesFound, "illegals"));  
-    id_3 = (getOccurrence(phrasesFound, "the blacks"));
-    id_4 = (getOccurrence(phrasesFound, "the asians"));  
-    id_5 = (getOccurrence(phrasesFound, "the whites"));
-    id_6 = (getOccurrence(phrasesFound, "the latinos"));
-
-    */
-
-
     if (count === 0) {
         alrt = document.createElement('p');
         alrt.appendChild(document.createTextNode('We got nothing'));
         alert.appendChild(alrt);
     }
-
 
     // clears phraseFound and userInput
     phrasesFound = new Array();
@@ -191,4 +176,17 @@ function printLine(){
     document.getElementById("test").innerHTML = temp;
     var instance = new Mark(document.querySelector("#test"));
     instance.mark(phrases2, {accuracy: "partially", separateWordSearch: false,});
+
+//one instance
+instance.markRegExp(/#test/g, {
+  className: "one_instance"
+});
+
+//two instances
+instance.markRegExp(/#test/g, {
+  className: "two_instance"
+});
+
+
 }
+
