@@ -6,42 +6,41 @@ var phrases2 = ['illegal aliens', 'illegal alien', 'oriental', 'orientals', 'ill
 // to access a phrase, for example 'illegal aliens', we'd say
 // phrases[0].phrase
 // to access the explanation, we say phrases[0].explanation
-
 var phrases = [
     {
         id: 0,
-        phrase: 'illegal alien',
+        phrase: 'illegal alien. Used: ' + id_0 + ' times',
         explanation: 'placeholder'
     },
     {
         id: 1,
-        phrase: 'oriental',
+        phrase: 'oriental. Used: ' + id_1 + ' times',
         explanation: 'placeholder'
     },
     {
         id: 2,
-        phrase: 'illegals',
+        phrase: 'illegals. Used: ' + id_2 + ' times',
         explanation: 'placeholder'
     },
     {
         id: 3,
-        phrase: 'the blacks',
-        explanation: 'placeholder'
+        phrase: 'the blacks . Used: ' + id_3 + ' times',
+        explanation: 'placeholder' 
     },
     {
         id: 4,
-        phrase: 'the asians',
+        phrase: 'the asians. Used: ' + id_4 + ' times',
         explanation: 'placeholder'
     },
     {
         id: 5,
-        phrase: 'the whites',
+        phrase: 'the whites. Used: ' + id_5 + ' times',
         explanation: 'placeholder'
     },
     {
         id: 6,
-        phrase: 'the latinos',
-        explanation: 'placeholder'
+        phrase: 'the latinos. Used: ' + id_6 + ' times',
+        explanation: 'placeholder' 
     }
 ];
 
@@ -177,6 +176,7 @@ function printLine(){
     var instance = new Mark(document.querySelector("#test"));
     instance.mark(phrases2, {accuracy: "partially", separateWordSearch: false,});
 
+/*
 //one instance
 instance.markRegExp(/#test/g, {
   className: "one_instance"
@@ -189,3 +189,5 @@ instance.markRegExp(/#test/g, {
 
 
 }
+*/
+
