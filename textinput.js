@@ -189,4 +189,3 @@ instance.markRegExp(/#test/g, {
 
 
 }
-
