@@ -181,11 +181,25 @@ var options = {
 
 }
 
-//prints user input and highlights the found bias phrase
+//prints user input
 function printLine(){
     document.getElementById("test").innerHTML = temp;
-    var instance = new Mark(document.querySelector("#test"));
-    instance.mark(phrases2, {accuracy: "partially", separateWordSearch: false,});
+}
+
+//highlights the phrase passed in
+function highlighter(phraseHold2){
+    for (var i = 0; i <= phrasesFound.length; i++){
+        //highlights yellow is phrase is used one time
+        if (countString(phrasesFound[i]) < 2){
+            var instance = new Mark(document.querySelector("#test"));
+            instance.mark(phrasesFound[i], {accuracy: "partially", separateWordSearch: false,});
+        }else if(countString(phrasesFound[i]) < 4){
+            //highlights orange if phrase is used 2-3 times
+            var instance = new Mark(document.querySelector("#test"));
+            instance.mark(phrasesFound[i], {accuracy: "partially", separateWordSearch: false, className: 'secondary'},);
+        }   
+    }
+}
 
 /*
 //one instance
@@ -201,5 +215,3 @@ instance.markRegExp(/#test/g, {
 
 }
 */
-
-}
