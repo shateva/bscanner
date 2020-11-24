@@ -123,10 +123,12 @@ function scanText() {
             // pushes the phrase that was found to the array
             phrasesFound.push(phrases[i].phrase);
             console.log(phrasesFound);
-            printLine();     
+            printLine();  
+            highlighter(phrases[i].phrase);   
         }
         else {
             printLine();
+            highlighter(phrases[i].phrase);
         }
 
     }
