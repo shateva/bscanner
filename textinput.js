@@ -11,43 +11,43 @@ var phrases = [
         id: 0,
         phrase: 'illegal alien',
         explanation: 'placeholder'
-        score: id_0
+       // score: id_0
     },
     {
         id: 1,
         phrase: 'oriental',
         explanation: 'placeholder'
-        score: id_1
+      //  score: id_1
     },
     {
         id: 2,
         phrase: 'illegals',
         explanation: 'placeholder'
-        score: id_2
+      //  score: id_2
     },
     {
         id: 3,
         phrase: 'the blacks',
         explanation: 'placeholder'
-        score: id_3
+       // score: id_3
     },
     {
         id: 4,
         phrase: 'the asians',
         explanation: 'placeholder'
-        score: id_4
+       // score: id_4
     },
     {
         id: 5,
         phrase: 'the whites',
         explanation: 'placeholder'
-        score: id_5
+      //  score: id_5
     },
     {
         id: 6,
         phrase: 'the latinos',
         explanation: 'placeholder'
-        score: id_6 
+      //  score: id_6 
     }
 ];
 
@@ -202,3 +202,4 @@ instance.markRegExp(/#test/g, {
 }
 */
 
+}
