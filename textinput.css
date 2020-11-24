@@ -329,13 +329,14 @@ color: #0B5345 ;
     color: black;
 }
 
-mark.secondary {
+  mark.secondary {
   padding: 0;
-  background-color: orange;
-}
+   background-color: orange;
+  }
 
 /*moves the start scanning heading to the left*/
 #userInput-heading{
+  margin-top: 20%;
     float: left;
     width: 50%;
     
@@ -347,6 +348,7 @@ mark.secondary {
 }
 /*moves the all alerts heading to the left*/
 #alert-heading{
+  margin-top: 20%;
     float: right;
     width: 50%;
     
@@ -371,6 +373,7 @@ mark.secondary {
 }
 
 #alert p{
+  margin-top: 40%;
     padding: 0.5em 1em;
     background: white;
     margin: 1.5em 0;
@@ -415,5 +418,11 @@ mark.secondary {
     position: absolute;
     z-index: 1;
     margin-bottom: 40%;
+}
+
+
+#greenbox p{
+  color:rgba(31,85,74,1);
+  
 }
 
