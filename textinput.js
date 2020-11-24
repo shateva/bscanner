@@ -9,38 +9,45 @@ var phrases2 = ['illegal aliens', 'illegal alien', 'oriental', 'orientals', 'ill
 var phrases = [
     {
         id: 0,
-        phrase: 'illegal alien. Used: ' + id_0 + ' times',
+        phrase: 'illegal alien',
         explanation: 'placeholder'
+        score: id_0
     },
     {
         id: 1,
-        phrase: 'oriental. Used: ' + id_1 + ' times',
+        phrase: 'oriental',
         explanation: 'placeholder'
+        score: id_1
     },
     {
         id: 2,
-        phrase: 'illegals. Used: ' + id_2 + ' times',
+        phrase: 'illegals',
         explanation: 'placeholder'
+        score: id_2
     },
     {
         id: 3,
-        phrase: 'the blacks . Used: ' + id_3 + ' times',
-        explanation: 'placeholder' 
+        phrase: 'the blacks',
+        explanation: 'placeholder'
+        score: id_3
     },
     {
         id: 4,
-        phrase: 'the asians. Used: ' + id_4 + ' times',
+        phrase: 'the asians',
         explanation: 'placeholder'
+        score: id_4
     },
     {
         id: 5,
-        phrase: 'the whites. Used: ' + id_5 + ' times',
+        phrase: 'the whites',
         explanation: 'placeholder'
+        score: id_5
     },
     {
         id: 6,
-        phrase: 'the latinos. Used: ' + id_6 + ' times',
-        explanation: 'placeholder' 
+        phrase: 'the latinos',
+        explanation: 'placeholder'
+        score: id_6 
     }
 ];
 
@@ -138,10 +145,14 @@ function scanText() {
                 alrt = document.createElement('p');
                 let linebreak = document.createElement('br');
                 let linebreak2 = document.createElement('br');
+                let linebreak3 = document.createElement('br');
                 alrt.appendChild(document.createTextNode('Biased Phrase Found: ' + phrases[j].phrase));
                 alrt.appendChild(linebreak);
                 alrt.appendChild(linebreak2);
                 alrt.appendChild(document.createTextNode(phrases[j].explanation));
+                alrt.appendChild(linebreak3);
+                alrt.appendChild(document.createTextNode(phrases[j].score))
+
                 // then we add the text to the element we made in line 57
                 alert.appendChild(alrt);
                 
