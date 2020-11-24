@@ -96,7 +96,7 @@ function scanText() {
     temp = textbox.value;
     userInput = textbox.value.toLowerCase();
 
-    console.log(userInput);
+    
     if (userInput === '') {
         msg.classList.add("error");
         msg.innerHTML = 'Please enter text below';
@@ -108,11 +108,15 @@ function scanText() {
             //alert("Bias Checking Test");
             // pushes the phrase that was found to the array
             phrasesFound.push(phrases[i].phrase);
-            console.log(phrasesFound);
-            printLine();     
+    
+            printLine();   
+            countString();
+           
         }
         else {
             printLine();
+            countString();
+           
         }
 
     }
@@ -170,19 +174,21 @@ function scanText() {
         alert.appendChild(alrt);
     }
 
-   
 
     // clears phraseFound and userInput
     phrasesFound = new Array();
     userInput = ''; 
 
+  
 }
 
 //counts the number of phrase occurences
-function countString(hold, phraseHold){
-    let count = (hold.match(/the/g) || []).length;
+function countString(){
+    let count = (userInput.match(new RegExp(phrasesFound[0], "g")) || []).length;
     console.log(count);
+
 }
+ 
 
 //makes highlighting system highlight phrases regardless of capitalization
 var options = {
@@ -195,13 +201,15 @@ var options = {
 //prints user input and highlights the found bias phrase
 function printLine(){
     document.getElementById("test").innerHTML = temp;
-    var instance = new Mark(document.querySelector("#test"));
-    for (i=0; i<=phrases2.length; i++){
-        if (phrasesFound.includes(phrases2[i])){
-            instance.mark(phrases2, {accuracy: "partially", separateWordSearch: false,});
-        }
-        
-    }
-
-
+    
 }
+
+//function highlighter(phraseHold2){
+ //   var instance = new Mark(document.querySelector("#test"));
+ //   for (var i = 0; i <= phrasesFound.length; i++){
+  //      if (countString(userInput, phraseHold2) < 2){
+  //          instance.mark(phraseHold2, {accuracy: "partially", separateWordSearch: false,});
+  //  }
+  //  }
+//}
+
