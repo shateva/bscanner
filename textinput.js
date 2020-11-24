@@ -6,42 +6,48 @@ var phrases2 = ['illegal aliens', 'illegal alien', 'oriental', 'orientals', 'ill
 // to access a phrase, for example 'illegal aliens', we'd say
 // phrases[0].phrase
 // to access the explanation, we say phrases[0].explanation
-
 var phrases = [
     {
         id: 0,
         phrase: 'illegal alien',
         explanation: 'placeholder'
+        score: id_0
     },
     {
         id: 1,
         phrase: 'oriental',
         explanation: 'placeholder'
+        score: id_1
     },
     {
         id: 2,
         phrase: 'illegals',
         explanation: 'placeholder'
+        score: id_2
     },
     {
         id: 3,
         phrase: 'the blacks',
         explanation: 'placeholder'
+        score: id_3
     },
     {
         id: 4,
         phrase: 'the asians',
         explanation: 'placeholder'
+        score: id_4
     },
     {
         id: 5,
         phrase: 'the whites',
         explanation: 'placeholder'
+        score: id_5
     },
     {
         id: 6,
         phrase: 'the latinos',
         explanation: 'placeholder'
+        score: id_6 
     }
 ];
 
@@ -96,13 +102,13 @@ function scanText() {
 
     // counts the number of times biased word was used in the userInput
     // saves the number to id_#
-    id_0 = (userInput.match(/illegal alien/g) || []).length
-    id_1 = (userInput.match(/oriental/g) || []).length
-    id_2 = (userInput.match(/illegals/g) || []).length
-    id_3 = (userInput.match(/the blacks/g) || []).length
-    id_4 = (userInput.match(/the asians/g) || []).length
-    id_5 = (userInput.match(/the whites/g) || []).length
-    id_6 = (userInput.match(/the latinos/g) || []).length
+    id_0 = (userInput.match(/illegal alien/g) || []).length.toString()
+    id_1 = (userInput.match(/oriental/g) || []).length.toString()
+    id_2 = (userInput.match(/illegals/g) || []).length.toString()
+    id_3 = (userInput.match(/the blacks/g) || []).length.toString()
+    id_4 = (userInput.match(/the asians/g) || []).length.toString()
+    id_5 = (userInput.match(/the whites/g) || []).length.toString()
+    id_6 = (userInput.match(/the latinos/g) || []).length.toString()
 
     console.log(userInput);
     if (userInput === '') {
@@ -139,10 +145,14 @@ function scanText() {
                 alrt = document.createElement('p');
                 let linebreak = document.createElement('br');
                 let linebreak2 = document.createElement('br');
+                let linebreak3 = document.createElement('br');
                 alrt.appendChild(document.createTextNode('Biased Phrase Found: ' + phrases[j].phrase));
                 alrt.appendChild(linebreak);
                 alrt.appendChild(linebreak2);
                 alrt.appendChild(document.createTextNode(phrases[j].explanation));
+                alrt.appendChild(linebreak3);
+                alrt.appendChild(document.createTextNode(phrases[j].score))
+
                 // then we add the text to the element we made in line 57
                 alert.appendChild(alrt);
                 
@@ -177,6 +187,7 @@ function printLine(){
     var instance = new Mark(document.querySelector("#test"));
     instance.mark(phrases2, {accuracy: "partially", separateWordSearch: false,});
 
+/*
 //one instance
 instance.markRegExp(/#test/g, {
   className: "one_instance"
@@ -189,3 +200,5 @@ instance.markRegExp(/#test/g, {
 
 
 }
+*/
+
