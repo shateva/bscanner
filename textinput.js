@@ -76,8 +76,6 @@ var id_4;
 var id_5; 
 var id_6;
 
-
-
 // function that will scan the text
 function scanText() {
     document.getElementById("userInput-heading2").innerHTML = "Start Scanning...";
@@ -96,7 +94,17 @@ function scanText() {
     temp = textbox.value;
     userInput = textbox.value.toLowerCase();
 
-    
+    // counts the number of times biased word was used in the userInput
+    // saves the number to id_#
+    id_0 = (userInput.match(/illegal alien/g) || []).length
+    id_1 = (userInput.match(/oriental/g) || []).length
+    id_2 = (userInput.match(/illegals/g) || []).length
+    id_3 = (userInput.match(/the blacks/g) || []).length
+    id_4 = (userInput.match(/the asians/g) || []).length
+    id_5 = (userInput.match(/the whites/g) || []).length
+    id_6 = (userInput.match(/the latinos/g) || []).length
+
+    console.log(userInput);
     if (userInput === '') {
         msg.classList.add("error");
         msg.innerHTML = 'Please enter text below';
@@ -108,15 +116,11 @@ function scanText() {
             //alert("Bias Checking Test");
             // pushes the phrase that was found to the array
             phrasesFound.push(phrases[i].phrase);
-    
-            printLine();   
-            highlighter(phrases[i].phrase);
-           
+            console.log(phrasesFound);
+            printLine();     
         }
         else {
             printLine();
-            highlighter(phrases[i].phrase);
-           
         }
 
     }
@@ -148,47 +152,16 @@ function scanText() {
     
     }
 
-    //scores nummbers of times word is used in PhrasesFound
-
-    /*
-    function getOccurrence(array, value) {
-            var score = 0;
-            array.forEach((v) => (v === value && score++));
-            return score;
-        }
-
-    id_0 = (getOccurrence(phrasesFound, "illegal alien"))
-    id_1 = (getOccurrence(phrasesFound, "oriental"));
-    id_2 = (getOccurrence(phrasesFound, "illegals"));  
-    id_3 = (getOccurrence(phrasesFound, "the blacks"));
-    id_4 = (getOccurrence(phrasesFound, "the asians"));  
-    id_5 = (getOccurrence(phrasesFound, "the whites"));
-    id_6 = (getOccurrence(phrasesFound, "the latinos"));
-
-    */
-
-
     if (count === 0) {
         alrt = document.createElement('p');
         alrt.appendChild(document.createTextNode('We got nothing'));
         alert.appendChild(alrt);
     }
 
-
     // clears phraseFound and userInput
     phrasesFound = new Array();
     userInput = ''; 
-
-  
 }
-
-//counts the number of phrase occurences
-function countString(hold){
-    let count = (userInput.match(new RegExp(hold, "gi")) || []).length;
-    console.log(count);
-    return count;
-}
- 
 
 //makes highlighting system highlight phrases regardless of capitalization
 var options = {
@@ -201,19 +174,18 @@ var options = {
 //prints user input and highlights the found bias phrase
 function printLine(){
     document.getElementById("test").innerHTML = temp;
-    
-}
+    var instance = new Mark(document.querySelector("#test"));
+    instance.mark(phrases2, {accuracy: "partially", separateWordSearch: false,});
 
-function highlighter(phraseHold2){
-    
-    for (var i = 0; i <= phrasesFound.length; i++){
-        if (countString(phrasesFound[i]) < 2){
-            var instance = new Mark(document.querySelector("#test"));
-            instance.mark(phrasesFound[i], {accuracy: "partially", separateWordSearch: false,});
-    }else if(countString(phrasesFound[i]) < 4){
-        var instance = new Mark(document.querySelector("#test"));
-        instance.mark(phrasesFound[i], {accuracy: "partially", separateWordSearch: false, className: 'secondary'},);
-    }
-}
-}
+//one instance
+instance.markRegExp(/#test/g, {
+  className: "one_instance"
+});
 
+//two instances
+instance.markRegExp(/#test/g, {
+  className: "two_instance"
+});
+
+
+}
