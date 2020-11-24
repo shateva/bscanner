@@ -325,8 +325,13 @@ color: #0B5345 ;
   }
 
   mark{
-    background: orange;
+    background: yellow;
     color: black;
+}
+
+mark.secondary {
+  padding: 0;
+  background-color: orange;
 }
 
 /*moves the start scanning heading to the left*/
@@ -411,7 +416,4 @@ color: #0B5345 ;
     z-index: 1;
     margin-bottom: 40%;
 }
-mark{
-    background: yellow;
-    color: black;
-}
+

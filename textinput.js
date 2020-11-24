@@ -110,12 +110,12 @@ function scanText() {
             phrasesFound.push(phrases[i].phrase);
     
             printLine();   
-            countString();
+            highlighter(phrases[i].phrase);
            
         }
         else {
             printLine();
-            countString();
+            highlighter(phrases[i].phrase);
            
         }
 
@@ -183,10 +183,10 @@ function scanText() {
 }
 
 //counts the number of phrase occurences
-function countString(){
-    let count = (userInput.match(new RegExp(phrasesFound[0], "g")) || []).length;
+function countString(hold){
+    let count = (userInput.match(new RegExp(hold, "gi")) || []).length;
     console.log(count);
-
+    return count;
 }
  
 
@@ -204,12 +204,16 @@ function printLine(){
     
 }
 
-//function highlighter(phraseHold2){
- //   var instance = new Mark(document.querySelector("#test"));
- //   for (var i = 0; i <= phrasesFound.length; i++){
-  //      if (countString(userInput, phraseHold2) < 2){
-  //          instance.mark(phraseHold2, {accuracy: "partially", separateWordSearch: false,});
-  //  }
-  //  }
-//}
+function highlighter(phraseHold2){
+    
+    for (var i = 0; i <= phrasesFound.length; i++){
+        if (countString(phrasesFound[i]) < 2){
+            var instance = new Mark(document.querySelector("#test"));
+            instance.mark(phrasesFound[i], {accuracy: "partially", separateWordSearch: false,});
+    }else if(countString(phrasesFound[i]) < 4){
+        var instance = new Mark(document.querySelector("#test"));
+        instance.mark(phrasesFound[i], {accuracy: "partially", separateWordSearch: false, className: 'secondary'},);
+    }
+}
+}
 
