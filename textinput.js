@@ -186,6 +186,14 @@ function printLine(){
     document.getElementById("test").innerHTML = temp;
 }
 
+//returns the number of times a phrase occurs in the user's text (takes in a phrase as parameter)
+function countString(hold){
+    let count = (userInput.match(new RegExp(hold, "gi")) || []).length;
+    console.log(count);
+    return count;
+    }
+
+
 //highlights the phrase passed in
 function highlighter(phraseHold2){
     for (var i = 0; i <= phrasesFound.length; i++){
