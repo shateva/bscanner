@@ -257,17 +257,17 @@ color:#8fcdf1;
 }
 
 /*moved footer to the bottom of the page*/
-#footer{
 
-width: 99%;
-position: absolute;
-top: 550px;
-}
 /*placed the logo and title side to side*/
 
 
 #design{
     margin-top: 15%;
+    
+}
+
+#design img{
+  width: 100%;
 }
 
 #logo2{
