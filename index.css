@@ -263,11 +263,11 @@ color:#8fcdf1;
 
 #design{
     margin-top: 15%;
-    
+  
 }
 
-#design img{
-  width: 100%;
+#design2{
+  margin-top: 5%;
 }
 
 #logo2{
@@ -281,7 +281,7 @@ color:#8fcdf1;
 
 #whatBS{
     color: #0B5345;
-    margin-top: 18%;
+    margin-top: 10%;
     margin-left: 50px;
     padding-top: 3%;
     font-size: 75px;
@@ -317,7 +317,7 @@ color:#8fcdf1;
   .website{
       float: right;
       margin-right: 100px;
-      margin-top: 21%;
+      margin-top: 13%;
   }
 
   #video{
