@@ -1,4 +1,10 @@
-
+#navi{
+position: fixed; /* Set the navbar to fixed position */
+  top: 0; /* Position the navbar at the top of the page */
+  width: 100%; /* Full width */
+  z-index: 800;
+  font-family: 'Rubik';
+}
 
 #menuToggle
 {
@@ -16,7 +22,7 @@
 #menuToggle a
 {
   text-decoration: none;
-  color: #232323;
+  color: white;
   
   transition: color 0.3s ease;
 }
@@ -112,11 +118,12 @@
 #menu
 {
   position: absolute;
-  width: 300px;
+  width: 100%;
   margin: -100px 0 0 -50px;
   padding: 50px;
   padding-top: 125px;
-  
+  padding-bottom: 33%;
+  background: linear-gradient(90deg,rgba(31,85,74,1) 1%, rgba(0, 0, 0, 0.20) 50%, rgba(0,212,255,0) 100%);
   list-style-type: none;
   -webkit-font-smoothing: antialiased;
   /* to stop flickering of text in safari */
@@ -263,7 +270,7 @@ font-family: Futura, "Trebuchet MS", Arial, sans-serif;
     overflow: hidden;
     outline: none;
     position: absolute;
-    z-index: 30;
+    z-index: 10;
     resize: none; /*remove the resize handle on the bottom right*/
 
 
