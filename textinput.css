@@ -3,7 +3,7 @@
 #menuToggle
 {
     display: block;
-    margin-top: 4%;
+    margin-top: 2%;
     margin-left: 2%;
     position: relative;
     font-family: 'Rubik';
@@ -169,6 +169,8 @@ color: rgba(31,85,74,1);
 color:#0B5345;
 width: auto;
 position: relative;
+text-align: center;
+
 }
 
 #logo{
@@ -244,8 +246,10 @@ font-family: Futura, "Trebuchet MS", Arial, sans-serif;
 
 #txt{
     width:45%;
+    margin-top: .45%;
     margin-left: 27.5%;
-	color: #0B5345 ;
+  color: #0B5345 ;
+  border-color: #0B5345 ;;
     height: 35%;
     float: right;
     font-size: x-large;
@@ -299,10 +303,10 @@ color:#8fcdf1;
 }
 
 /*moved footer to the bottom of the page*/
-#footer{
+footer{
     width: 99%;
     position: absolute;
-    top: 760;
+
     }
 
 /*placed the logo and title side to side*/
@@ -392,8 +396,12 @@ color: #0B5345 ;
     width: 15%;
     font-family: 'Rubik';
     color: rgba(31,85,74,1);
-    padding-left: 20%;
-    padding-top: 2em;
+    padding-left: 18%;
+    margin-bottom: 20%;
+    padding-top: 1em;
+    position: absolute;
+    z-index: 2;
+
 }
 
 #arrow {
@@ -411,9 +419,10 @@ color: #0B5345 ;
     border-radius: 10px;
     float: right;
     position: absolute;
-    z-index: 3;
+    z-index: 8;
     padding-left: .2%;
     padding-right: .3%;
+   margin-top: 15%;
 }
 
 
@@ -424,11 +433,31 @@ color: #0B5345 ;
     width: 100%;
     position: absolute;
     z-index: 1;
+    margin-top: 10%;
  
+}
+
+#greensquare{
+  background-color: rgba(31,85,74,1);
+  height: 16em;
+  position: relative;
+  width: 46.5%;
+  z-index: 5;
+  margin-left: 28%;
+  float: left;
+  -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 10px;
+  
 }
 
 
 #greenbox p{
+  color:rgba(31,85,74,1);
+  
+}
+
+#greensquare p{
   color:rgba(31,85,74,1);
   
 }
