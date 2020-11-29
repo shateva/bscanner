@@ -55,6 +55,7 @@ html {
   z-index: 2; /* and place it over the hamburger */
   
   -webkit-touch-callout: none;
+  
 }
 
 /*
@@ -125,12 +126,12 @@ html {
 #menu
 {
   position: absolute;
-  width: 150px;
+  width: 100%;
   margin: -100px 0 0 -50px;
   padding: 50px;
   padding-top: 125px;
   padding-bottom: 33%;
-  background-color: rgba(31,85,74,1);
+  background: linear-gradient(90deg,rgba(31,85,74,1) 1%, rgba(0, 0, 0, 0.12) 50%);
   list-style-type: none;
   -webkit-font-smoothing: antialiased;
   /* to stop flickering of text in safari */
