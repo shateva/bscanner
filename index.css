@@ -131,7 +131,7 @@ html {
   padding: 50px;
   padding-top: 125px;
   padding-bottom: 33%;
-  background: linear-gradient(90deg,rgba(31,85,74,1) 1%, rgba(0, 0, 0, 0.12) 50%);
+  background: linear-gradient(90deg,rgba(31,85,74,1) 1%, rgba(0, 0, 0, 0.20) 50%, rgba(0,212,255,0) 100%);
   list-style-type: none;
   -webkit-font-smoothing: antialiased;
   /* to stop flickering of text in safari */
