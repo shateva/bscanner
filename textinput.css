@@ -391,12 +391,13 @@ color: #0B5345 ;
 }
 
 #alert p{
-  margin-top: 40%;
+    margin-top: 40%;
     padding: 0.5em 1em;
     background: white;
     margin: 1.5em 0;
     border-radius: 20px;
     box-shadow: 0px 8px 5px lightgrey;
+    width: 50%;
 }
 
 #green-arrow {
