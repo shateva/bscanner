@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 #navi{
 position: fixed; /* Set the navbar to fixed position */
   top: 0; /* Position the navbar at the top of the page */
@@ -350,19 +354,21 @@ color: #0B5345 ;
 
 /*moves the start scanning heading to the left*/
 #userInput-heading{
-  margin-top: 20%;
+  margin-top: 15%;
     float: left;
     width: 50%;
+    margin-bottom: 8%;
 }
 /*moves the start scanning heading to the left*/
 #userInput-heading h1{
     text-align: center;
-    padding-left: 1em;
+    padding-left: 1.5em;
     font-family: 'Rubik';
+    margin-bottom: 7%;
 }
 /*moves the all alerts heading to the left*/
 #alert-heading{
-  margin-top: 20%;
+  margin-top: 15%;
     float: right;
     width: 50%;
     font-family: 'Rubik';
@@ -372,6 +378,8 @@ color: #0B5345 ;
     text-align: center;
     padding-left: 1em;
     font-family: 'Rubik';
+    float: right;
+    margin-right: 9em;
 }
 
 /* css for the userinput text in the results section*/
@@ -386,7 +394,7 @@ color: #0B5345 ;
     border-radius: 20px;
     box-shadow: 0px 8px 5px lightgrey;
     font-family: 'Rubik';
-    margin-left: 7em;
+    margin-left: 10em;
 }
 
 #alert p{
@@ -397,7 +405,8 @@ color: #0B5345 ;
     border-radius: 20px;
     box-shadow: 0px 8px 5px lightgrey;
     width: 50%;
-    margin-left: 9.5em;
+    float: right;
+    margin-right: 10em;
 }
 
 #green-arrow {
