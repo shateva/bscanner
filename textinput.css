@@ -365,6 +365,8 @@ color: #0B5345 ;
     padding-left: 1.5em;
     font-family: 'Rubik';
     margin-bottom: 7%;
+    position: relative;
+    z-index: 2;
 }
 /*moves the all alerts heading to the left*/
 #alert-heading{
@@ -372,6 +374,8 @@ color: #0B5345 ;
     float: right;
     width: 50%;
     font-family: 'Rubik';
+    position: relative;
+    z-index: 2;
 }
 /*moves the all alerts heading to the left*/
 #alert-heading h1{
@@ -380,6 +384,8 @@ color: #0B5345 ;
     font-family: 'Rubik';
     float: right;
     margin-right: 9em;
+    position: relative;
+    z-index: 2;
 }
 
 /* css for the userinput text in the results section*/
@@ -407,6 +413,8 @@ color: #0B5345 ;
     width: 50%;
     float: right;
     margin-right: 10em;
+    z-index: 3;
+    position: relative;
 }
 
 #green-arrow {
@@ -479,3 +487,37 @@ color: #0B5345 ;
   
 }
 
+#circle{
+  position: absolute;
+  z-index: 2000;
+  margin-top: 34.5%;
+  margin-left: 65%;
+  background-color: yellow;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  text-align: center;
+  visibility: hidden;
+}
+
+#circle p{
+  margin-top: 25%;
+}
+
+#hide{
+  position: absolute;
+  z-index: 1999;
+  margin-top: 30%;
+  margin-left: 60%;
+  margin-bottom: 10%;
+  background-color: white;
+  width: 20%;
+  visibility: hidden;
+  -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 10px;
+}
+
+#circle:hover + #hide {
+  visibility: visible;
+}

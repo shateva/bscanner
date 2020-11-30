@@ -86,6 +86,8 @@ var id_6;
 function scanText() {
     document.getElementById("userInput-heading2").innerHTML = "Start Scanning...";
     document.getElementById("alert-heading2").innerHTML = "All alerts";
+    document.getElementById("countCircle").innerHTML = "hold";
+    document.getElementById("circle").style.visibility = "visible";
 
     // removes any alerts that already exist so that
     // alerts aren't repeated
@@ -121,6 +123,8 @@ function scanText() {
             // pushes the phrase that was found to the array
             phrasesFound.push(phrases[i].phrase);
             console.log(phrasesFound);
+            //prints number of phrases that were found
+            document.getElementById("hide").innerHTML = "["+ phrasesFound.length + "] different phrases have been found <br>\n [] phrases in total have been found";
             printLine();  
             highlighter(phrases[i].phrase);   
         }
@@ -173,6 +177,11 @@ function scanText() {
     userInput = ''; 
 }
 
+
+
+
+
+
 //makes highlighting system highlight phrases regardless of capitalization
 var options = {
     "caseSensitive": false,
@@ -189,7 +198,7 @@ function printLine(){
 //returns the number of times a phrase occurs in the user's text (takes in a phrase as parameter)
 function countString(hold){
     let count = (userInput.match(new RegExp(hold, "gi")) || []).length;
-    console.log(count);
+
     return count;
     }
 
@@ -208,6 +217,7 @@ function highlighter(phraseHold2){
         }   
     }
 }
+
 
 /*
 //one instance
