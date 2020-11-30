@@ -3,7 +3,7 @@ html {
 }
 
 #navi{
-position: fixed; /* Set the navbar to fixed position */
+/*position: fixed; /* Set the navbar to fixed position */
   top: 0; /* Position the navbar at the top of the page */
   width: 100%; /* Full width */
   z-index: 800;
@@ -354,6 +354,7 @@ color: #0B5345 ;
 
 /*moves the start scanning heading to the left*/
 #userInput-heading{
+  padding-top: 5%;
   margin-top: 15%;
     float: left;
     width: 50%;
@@ -370,6 +371,7 @@ color: #0B5345 ;
 }
 /*moves the all alerts heading to the left*/
 #alert-heading{
+  padding-top: 5%;
   margin-top: 15%;
     float: right;
     width: 50%;
@@ -494,8 +496,8 @@ color: #0B5345 ;
 #circle{
   position: absolute;
   z-index: 2000;
-  margin-top: 34.5%;
-  margin-left: 65%;
+  margin-top: 39.5%;
+  margin-left: 66.5%;
   background-color: yellow;
   width: 35px;
   height: 35px;
@@ -511,8 +513,8 @@ color: #0B5345 ;
 #hide{
   position: absolute;
   z-index: 1999;
-  margin-top: 30%;
-  margin-left: 60%;
+  margin-top: 36%;
+  margin-left: 58%;
   margin-bottom: 10%;
   background-color: white;
   width: 20%;

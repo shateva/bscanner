@@ -126,12 +126,15 @@ html {
 #menu
 {
   position: absolute;
-  width: 100%;
+  /*width: 100%;*/
+  width: 15%;
   margin: -100px 0 0 -50px;
   padding: 50px;
   padding-top: 125px;
   padding-bottom: 33%;
-  background: linear-gradient(90deg,rgba(31,85,74,1) 1%, rgba(0, 0, 0, 0.20) 50%, rgba(0,212,255,0) 100%);
+  background: rgba(31,85,74,1);
+  /*background: linear-gradient(90deg,rgba(31,85,74,1) 1%, rgba(0, 0, 0, 0.20) 50%, rgba(0,212,255,0) 100%);
+  */
   list-style-type: none;
   -webkit-font-smoothing: antialiased;
   /* to stop flickering of text in safari */
@@ -345,7 +348,7 @@ color:#8fcdf1;
   }
 
   #begin{
-    margin-left: 25%;
+    margin-left: 22%;
     margin-top: 10%;
     color:rgba(31,85,74,1);
     text-align: center;

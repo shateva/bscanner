@@ -155,7 +155,7 @@ function scanText() {
                 alrt.appendChild(linebreak2);
                 alrt.appendChild(document.createTextNode(phrases[j].explanation));
                 alrt.appendChild(linebreak3);
-                alrt.appendChild(document.createTextNode(phrases[j].score))
+               // alrt.appendChild(document.createTextNode(phrases[j].score))
 
                 // then we add the text to the element we made in line 57
                 alert.appendChild(alrt);
