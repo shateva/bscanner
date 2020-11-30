@@ -390,40 +390,32 @@ color: #0B5345 ;
 
 /* css for the userinput text in the results section*/
 #test{
-    width: 50%;
-    font-size: 18px;
-    color: black;
-    padding-left: 2em;
-    padding-right: 1.4em;
-    line-height: 2em;
-    background: white;
-    border-radius: 20px;
-    box-shadow: 0px 8px 5px lightgrey;
-    font-family: 'Rubik';
-<<<<<<< HEAD
-    margin-left: 10em;
-=======
-    margin-left: 8.5em;
->>>>>>> 8a3a4d16b8aaa4134bc457d4ddee34ad192b88df
+  width: 50%;
+  font-size: 18px;
+  color: black;
+  padding-left: 2em;
+  padding-right: 1.4em;
+  line-height: 2em;
+  background: white;
+  border-radius: 20px;
+  box-shadow: 0px 8px 5px lightgrey;
+  font-family: 'Rubik';
+  margin-left: 7em;
+  margin-left: 8.5em;
 }
 
+
 #alert p{
-    margin-top: 40%;
-    padding: 0.5em 1em;
-    background: white;
-    margin: 1.5em 0;
-    border-radius: 20px;
-    box-shadow: 0px 8px 5px lightgrey;
-    width: 50%;
-<<<<<<< HEAD
-    float: right;
-    margin-right: 10em;
-    z-index: 3;
-    position: relative;
-=======
-    margin-left: 10em;
->>>>>>> 8a3a4d16b8aaa4134bc457d4ddee34ad192b88df
-}
+  margin-top: 40%;
+  padding: 0.5em 1em;
+  background: white;
+  margin: 1.5em 0;
+  border-radius: 20px;
+  box-shadow: 0px 8px 5px lightgrey;
+  width: 50%;
+  margin-left: 9.5em;
+  margin-left: 10em;
+
 
 #green-arrow {
     width: 15%;
