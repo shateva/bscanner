@@ -86,8 +86,6 @@ var id_6;
 function scanText() {
     document.getElementById("userInput-heading2").innerHTML = "Start Scanning...";
     document.getElementById("alert-heading2").innerHTML = "All alerts";
-    // scrolling
-    scroll("#scanning", 500);
 
     // removes any alerts that already exist so that
     // alerts aren't repeated
