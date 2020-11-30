@@ -400,7 +400,11 @@ color: #0B5345 ;
     border-radius: 20px;
     box-shadow: 0px 8px 5px lightgrey;
     font-family: 'Rubik';
+<<<<<<< HEAD
     margin-left: 10em;
+=======
+    margin-left: 8.5em;
+>>>>>>> 8a3a4d16b8aaa4134bc457d4ddee34ad192b88df
 }
 
 #alert p{
@@ -411,10 +415,14 @@ color: #0B5345 ;
     border-radius: 20px;
     box-shadow: 0px 8px 5px lightgrey;
     width: 50%;
+<<<<<<< HEAD
     float: right;
     margin-right: 10em;
     z-index: 3;
     position: relative;
+=======
+    margin-left: 10em;
+>>>>>>> 8a3a4d16b8aaa4134bc457d4ddee34ad192b88df
 }
 
 #green-arrow {
