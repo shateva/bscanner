@@ -1,4 +1,7 @@
-
+*{
+  margin: 0;
+  padding: 0;
+}
 #navi{
 
   position: fixed; /* Set the navbar to fixed position */
@@ -127,12 +130,12 @@ html {
 {
   position: absolute;
   /*width: 100%;*/
-  width: 15%;
+  width: 100%;
   margin: -100px 0 0 -50px;
   padding: 50px;
   padding-top: 125px;
   padding-bottom: 33%;
-  background: rgba(31,85,74,1);
+  background: linear-gradient(90deg, rgba(31,85,74,1) 15%, rgba(0,0,0,.2) 15%);
   /*background: linear-gradient(90deg,rgba(31,85,74,1) 1%, rgba(0, 0, 0, 0.20) 50%, rgba(0,212,255,0) 100%);
   */
   list-style-type: none;
@@ -178,7 +181,7 @@ color: rgba(31,85,74,1);
 
 
 #logo{
-    margin-left: 40%;
+    margin-left: 42%;
     padding-bottom: 20px;
 
 }
@@ -266,12 +269,12 @@ color:#8fcdf1;
 
 
 #design{
-    margin-top: 15%;
+    margin-top: 5%;
   
 }
 
 #design2{
-  margin-top: 5%;
+  margin-top: 10%;
 }
 
 #logo2{
@@ -347,16 +350,7 @@ color:#8fcdf1;
       font-family: 'Rubik';
   }
 
-  #begin{
-    margin-left: 22%;
-    margin-top: 10%;
-    color:rgba(31,85,74,1);
-    text-align: center;
-    float: left;
-    font-size: 200%;
-    font-family: 'Rubik';
-
-  }
+  
   #scanning2{
     background-color: #1F554A;
     color: white;
@@ -380,4 +374,22 @@ color:#8fcdf1;
     /*makes the start scanning button red when you hover over it*/
     #scanning2 a:hover{
     color:#8fcdf1;
+    }
+
+    #begin{
+      margin-left: 10%;
+      margin-top: 20%;
+      color:rgba(31,85,74,1);
+      text-align: center;
+      float: left;
+      font-size: 230%;
+      font-family: 'Rubik';
+      float: left;
+  
+    }
+
+    #bee{
+      float: right;
+      margin-top: 10%;
+      margin-right: 10%;
     }
