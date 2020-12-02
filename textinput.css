@@ -500,3 +500,14 @@ color: #0B5345 ;
 #design{
   margin-top: 45%;
 }
+
+#highlight-key p{
+  float: right;
+  width: 36%;
+  background: white;
+  border-radius: 20px;
+  color: black;
+  padding:15px ;
+  box-shadow: 0px 8px 5px lightgrey;
+  font-family: 'Rubik';
+}
