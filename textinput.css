@@ -501,6 +501,7 @@ color: #0B5345 ;
   margin-top: 45%;
 }
 
+
 #highlight-key p{
   float: right;
   width: 36%;
@@ -510,4 +511,5 @@ color: #0B5345 ;
   padding:15px ;
   box-shadow: 0px 8px 5px lightgrey;
   font-family: 'Rubik';
+
 }
