@@ -240,12 +240,9 @@ function countAll(){
 instance.markRegExp(/#test/g, {
   className: "one_instance"
 });
-
 //two instances
 instance.markRegExp(/#test/g, {
   className: "two_instance"
 });
-
-
 }
 */
