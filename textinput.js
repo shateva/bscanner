@@ -1,6 +1,7 @@
 // running list of phrases we want to go thorough
 // everything must be lowercase
 var phrases2 = ['illegal aliens', 'illegal alien', 'oriental', 'orientals', 'illegals', 'the blacks', 'the asians', 'the whites', 'the latinos']
+var phrases3 = ['we', 'our', 'us']
 
 // phrases is now an object literal (same thing as a dictionary)
 // to access a phrase, for example 'illegal aliens', we'd say
