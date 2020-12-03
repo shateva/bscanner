@@ -320,6 +320,12 @@ color: #0B5345 ;
    background-color: orange;
   }
 
+  mark.three {
+    padding: 0;
+     background-color: rgb(190, 65, 65);
+    }
+  
+
 /*moves the start scanning heading to the left*/
 #userInput-heading{
   padding-top: 5%;
@@ -333,7 +339,7 @@ color: #0B5345 ;
     text-align: center;
     padding-left: 1.5em;
     font-family: 'Rubik';
-    margin-bottom: 7%;
+    margin-bottom: 4%;
     position: relative;
    
 }
@@ -482,7 +488,7 @@ color: #0B5345 ;
 #hide{
   position: absolute;
   z-index: 1999;
-  margin-top: 36%;
+  margin-top: 39%;
   margin-left: 58%;
   margin-bottom: 10%;
   background-color: white;

@@ -270,7 +270,18 @@ color:#8fcdf1;
 
 #design{
     margin-top: 5%;
-  
+    position: relative;
+    z-index: 3;
+
+
+}
+
+#logoWhite{
+  margin-top: 11%;
+  margin-left: 1%;
+  position: absolute;
+  z-index: 4;
+
 }
 
 #design2{
@@ -294,6 +305,7 @@ color:#8fcdf1;
     color: #0B5345;
     margin-top: 10%;
     margin-left: 50px;
+    margin-bottom: 2%;
     padding-top: 3%;
     font-size: 75px;
     font-family: 'Rubik';

@@ -210,10 +210,10 @@ function countString(hold){
 function highlighter(phraseHold2){
     for (var i = 0; i <= phrasesFound.length; i++){
         //highlights yellow is phrase is used one time
-        if (countString(phrasesFound[i]) < 2){
+        if (countString(phrasesFound[i]) < 3){
             var instance = new Mark(document.querySelector("#test"));
             instance.mark(phrasesFound[i], {accuracy: "partially", separateWordSearch: false,});
-        }else if(countString(phrasesFound[i]) < 4){
+        }else if(countString(phrasesFound[i]) < 100){
             //highlights orange if phrase is used 2-3 times
             var instance = new Mark(document.querySelector("#test"));
             instance.mark(phrasesFound[i], {accuracy: "partially", separateWordSearch: false, className: 'secondary'},);
