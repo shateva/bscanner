@@ -102,13 +102,13 @@ function scanText() {
 
     // counts the number of times biased word was used in the userInput
     // saves the number to id_#
-    id_0 = (userInput.match(/illegal alien/g) || []).length.toString()
-    id_1 = (userInput.match(/oriental/g) || []).length.toString()
-    id_2 = (userInput.match(/illegals/g) || []).length.toString()
-    id_3 = (userInput.match(/the blacks/g) || []).length.toString()
-    id_4 = (userInput.match(/the asians/g) || []).length.toString()
-    id_5 = (userInput.match(/the whites/g) || []).length.toString()
-    id_6 = (userInput.match(/the latinos/g) || []).length.toString()
+    id_0 = (userInput.match(/illegal alien/g) || []).length
+    id_1 = (userInput.match(/oriental/g) || []).length
+    id_2 = (userInput.match(/illegals/g) || []).length
+    id_3 = (userInput.match(/the blacks/g) || []).length
+    id_4 = (userInput.match(/the asians/g) || []).length
+    id_5 = (userInput.match(/the whites/g) || []).length
+    id_6 = (userInput.match(/the latinos/g) || []).length
 
     console.log(userInput);
     if (userInput === '') {
@@ -124,7 +124,7 @@ function scanText() {
             phrasesFound.push(phrases[i].phrase);
             console.log(phrasesFound);
             //prints number of phrases that were found
-            document.getElementById("hide").innerHTML = "["+ phrasesFound.length + "] different phrases have been found <br>\n [] phrases in total have been found";
+            document.getElementById("hide").innerHTML = "["+ phrasesFound.length + "] different phrases have been found <br>\n [" + countAll(userInput) + "] phrases in total have been found";
             printLine();  
             highlighter(phrases[i].phrase);   
         }
@@ -203,6 +203,8 @@ function countString(hold){
     }
 
 
+
+
 //highlights the phrase passed in
 function highlighter(phraseHold2){
     for (var i = 0; i <= phrasesFound.length; i++){
@@ -216,6 +218,12 @@ function highlighter(phraseHold2){
             instance.mark(phrasesFound[i], {accuracy: "partially", separateWordSearch: false, className: 'secondary'},);
         }   
     }
+}
+
+function countAll(phraseHold3){
+    let sum = id_0 + id_1 + id_2 + id_3 + id_4 + id_5 + id_6
+    
+    return sum;
 }
 
 
