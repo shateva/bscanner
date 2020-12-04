@@ -499,6 +499,12 @@ color: #0B5345 ;
     border-radius: 10px;
 }
 
+.legend { list-style: none; font-family: 'Rubik' }
+.legend li { float: left; margin-right: 30px; }
+.legend span { border: 1px solid #ccc; float: left; width: 12px; height: 12px; margin: 2px; }
+.legend .once { background-color: yellow; }
+.legend .two-three { background-color: orange; }
+
 #circle:hover + #hide {
   visibility: visible;
 }
