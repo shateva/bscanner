@@ -485,6 +485,7 @@ color: #0B5345 ;
   margin-top: 25%;
 }
 
+
 #hide{
   position: absolute;
   z-index: 1999;
@@ -502,5 +503,10 @@ color: #0B5345 ;
 
 #circle:hover + #hide {
   visibility: visible;
+}
+
+#key {
+
+    
 }
 
