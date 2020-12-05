@@ -506,7 +506,11 @@ color: #0B5345 ;
 }
 
 #key {
-
     
+    width: 250px;
+    height: 103px;
+    bottom: 140px;
+    right: 50px;
+    position: relative;
 }
 
