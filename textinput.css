@@ -514,3 +514,48 @@ color: #0B5345 ;
     position: relative;
 }
 
+@media screen and (max-width:415px) {
+  #logo{
+    margin-left: 20%;
+  }
+
+  .content h1{
+    font-size: 150%;
+    margin-right: 14%;
+  }
+  #txt{
+    font-size: small;
+    width: 55%;
+    height: auto;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-left: 15%;
+    
+  }
+  #greenbox{
+    height: 8em;
+    margin-top: 22%;
+  }
+  #greensquare{
+    height: 8em;
+    width:56%;
+    margin-left: 17%;
+  }
+  #buttonback{
+    margin-top: 32%;
+    width: 54.5%;
+    margin-left: 17.5%;
+    padding-top: 7%;
+  }
+  #scanning{
+    padding: 5px 10px;
+    font-size: 8px;
+    width: 88px;
+    margin-left: 30%;
+  }
+  #green-arrow{
+    padding-left: 2%;
+    font-size: 8px;
+  }
+}
