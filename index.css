@@ -435,3 +435,28 @@ color:#8fcdf1;
 
 }
 
+@media screen and (max-width:415px){
+  #info{
+    margin-left: 50px;
+    margin-top: -22%;
+  }
+  #info p{
+    font-size: 15px;
+  }
+  #scanning{
+    margin-left: 158px;
+    padding: 5px 10px;
+    font-size: 8px;
+    width: 88px;
+    margin-top: 3%;
+  }
+  #typing{
+    font-size: 10px;
+  }
+  #logo{
+    margin-left: 20%;
+  }
+
+
+}
+
