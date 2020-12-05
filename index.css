@@ -493,10 +493,23 @@ color:#8fcdf1;
     height: 100px;
   }
   .how{
-    width: 25%;
+    width: 30%;
     margin-top: -30%;
     margin-right: 22%;
   }
+  #begin{
+    font-size: 80%;
+  }
+  #scanning2{
+    padding: 5px 10px;
+    font-size: 8px;
+    width: 88px;
+  }
+  #bee{
+    width: 50%;
+    margin-top: -25%;
+  }
+
 
 
 
