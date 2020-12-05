@@ -409,3 +409,29 @@ color:#8fcdf1;
       margin-top: 10%;
       margin-right: 10%;
     }
+
+@media screen and (max-width:376px){
+  #info{
+    margin-left: 50px;
+    margin-top: -25%;
+  }
+  #info p{
+    font-size: 15px;
+  }
+  #scanning{
+    margin-left: 145px;
+    padding: 5px 10px;
+    font-size: 8px;
+    width: 88px;
+    margin-top: 3%;
+  }
+  #typing{
+    font-size: 10px;
+  }
+  #logo{
+    margin-left: 20%;
+  }
+
+
+}
+
