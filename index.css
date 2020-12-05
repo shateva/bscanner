@@ -456,6 +456,28 @@ color:#8fcdf1;
   #logo{
     margin-left: 20%;
   }
+  #whatBS{
+    color: #0B5345;
+    margin-top: 10%;
+    margin-left: 50px;
+    margin-bottom: 2%;
+    padding-top: 3%;
+    font-size: 18px;
+}
+#whatBS2{
+    
+  padding-bottom: 50px;
+  background-color: #0B5345;
+  color: #EAFAF1;
+  font-size: 12px;
+  padding-left: 25px;
+  padding-top: 25px;
+}
+  .website{
+    width: 35%;
+    height: 35%;
+  }
+
 
 
 }
