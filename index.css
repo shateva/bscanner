@@ -464,19 +464,40 @@ color:#8fcdf1;
     padding-top: 3%;
     font-size: 18px;
 }
-#whatBS2{
+  #whatBS2{
     
-  padding-bottom: 50px;
-  background-color: #0B5345;
-  color: #EAFAF1;
-  font-size: 12px;
-  padding-left: 25px;
-  padding-top: 25px;
-}
+    padding-bottom: 50px;
+    background-color: #0B5345;
+    color: #EAFAF1;
+    font-size: 12px;
+    padding-left: 25px;
+    padding-top: 25px;
+  }
+  #whatBS2 i{
+    font-size: 5px;
+    background-size: 5px;
+  }
   .website{
     width: 35%;
     height: 35%;
   }
+  #how{
+    font-size: 200%;
+  }
+  #video{
+    border: none;
+    margin-left: 10%;
+  }
+  #video iframe{
+    width: 50%;
+    height: 100px;
+  }
+  .how{
+    width: 25%;
+    margin-top: -30%;
+    margin-right: 22%;
+  }
+
 
 
 
