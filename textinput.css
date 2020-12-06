@@ -246,9 +246,7 @@ font-family: Futura, "Trebuchet MS", Arial, sans-serif;
     resize: none; /*remove the resize handle on the bottom right*/
 
 
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    border-radius: 10px;
+    border-radius: 40px;
 }
 
 /*puts each line on top of each other*/
@@ -417,16 +415,14 @@ color: #0B5345 ;
     margin-left: 28.3%;
     background: white;
     padding-bottom: 2%;
-    padding-top: 2%;
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    border-radius: 10px;
+    padding-top: 10%;
+    border-radius: 40px;
     float: right;
     position: absolute;
     z-index: 8;
     padding-left: .2%;
     padding-right: .25%;
-   margin-top: 21%;
+   margin-top: 15%;
 }
 
 
@@ -443,16 +439,14 @@ color: #0B5345 ;
 
 #greensquare{
   background-color: rgba(31,85,74,1);
-  margin-top: 4.5%;
+  margin-top: 4.6%;
   height: 16em;
   position: relative;
   width: 46%;
   z-index: 5;
   margin-left: 27.78%;
   float: left;
-  -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    border-radius: 10px;
+    border-radius: 40px;
   
 }
 
