@@ -190,10 +190,26 @@ background-size: 100%;
 */
 }
 
+#bee1{
+  position: absolute;
+  z-index: 2;
+  margin-top: 30%;
+  margin-left: 70%;
+  height: 7%;
+}
+
+#bee2{
+  position: absolute;
+  z-index: 2;
+  margin-top: 49%;
+  margin-left: 6%;
+  height: 1.5%;
+}
+
 #clouds{
   position: absolute;
   z-index: 1;
-  height: 400%;
+  height: 300%;
 }
 
 /* made this positioning relative so that I can move the title around*/
@@ -263,7 +279,7 @@ color: white;
 border: none;
 padding: 10px 15px;
 margin-top: 2%;
-margin-left: 630px;
+margin-left: 44%;
 width: 175px;
 font-family: 'Rubik';
 border-radius: 20px;
@@ -381,7 +397,7 @@ color:#8fcdf1;
       text-align: center;
       margin-top: 10%;
       color:rgba(31,85,74,1);
-      font-size: 300%;
+      font-size: 350%;
       padding-top:2%;
       font-family: 'Rubik';
   }
