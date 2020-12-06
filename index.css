@@ -384,7 +384,7 @@ color:#8fcdf1;
       margin-top: 7%;
       float: left;
       border: dashed;
-      border-color: rgba(31,85,74,1);
+      border-color: black;
       padding: 2%;
   }
 
@@ -400,6 +400,20 @@ color:#8fcdf1;
       font-size: 350%;
       padding-top:2%;
       font-family: 'Rubik';
+  }
+
+  #instructions{
+    margin-top: 6%;
+    list-style-image: url('beeRight.png');
+    margin-right: 10%;
+    float: right;
+    font-size: 300%;
+    font-family: 'Rubik';
+    color:rgba(31,85,74,1);
+  }
+
+  #instructions li{
+    margin: 10% 0;
   }
 
   
