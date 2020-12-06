@@ -88,6 +88,7 @@ function scanText() {
     document.getElementById("alert-heading2").innerHTML = "All alerts";
     
     document.getElementById("circle").style.visibility = "visible";
+    document.getElementById("key").style.visibility = "visible";
 
     // removes any alerts that already exist so that
     // alerts aren't repeated

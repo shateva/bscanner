@@ -345,8 +345,7 @@ color: #0B5345 ;
 }
 /*moves the all alerts heading to the left*/
 #alert-heading{
-  padding-top: 5%;
-  margin-top: 15%;
+
     float: right;
     width: 50%;
     font-family: 'Rubik';
@@ -471,7 +470,7 @@ color: #0B5345 ;
 #circle{
   position: absolute;
   z-index: 2000;
-  margin-top: 42.5%;
+  margin-top: 22.5%;
   margin-left: 66.5%;
   background-color: yellow;
   width: 35px;
@@ -486,18 +485,18 @@ color: #0B5345 ;
 }
 
 #key {
-    position: relative;
-    top: 535px;
-    right: 120px;
-    
-    }
+  margin-top: 16%;
+  visibility: hidden;
+  margin-left: 15.5%;
+  margin-bottom: 1%;
+}
 
 
 #hide{
   position: absolute;
   z-index: 1999;
-  margin-top: 39%;
-  margin-left: 58%;
+  margin-top: 22.5%;
+  margin-left: 45.5%;
   margin-bottom: 10%;
   background-color: white;
   width: 20%;
