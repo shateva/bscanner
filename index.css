@@ -5,7 +5,7 @@
 
 #container{
   position: absolute;
-  z-index: 2;
+  z-index: 3;
 }
 
 #navi{
@@ -183,10 +183,17 @@ background-color: #EAFAF1;
 color: rgba(31,85,74,1);
 }
 
+
 body{
   background-color: #EBF7FD;
-background-image: url('Clouds.png');
+/*background-image: url('Clouds.png');
 background-size: 100%;
+*/
+}
+
+#clouds{
+  position: absolute;
+  z-index: 1;
 }
 
 /* made this positioning relative so that I can move the title around*/
@@ -284,12 +291,12 @@ color:#8fcdf1;
 #design{
     position: relative;
     z-index: 3;
-  margin-top: 12%;
+  margin-top: 14%;
 
 }
 
 #logoWhite{
-  margin-top: 17%;
+  margin-top: 19%;
   margin-left: 3%;
   position: absolute;
   z-index: 4;
@@ -413,6 +420,7 @@ color:#8fcdf1;
 
     #begin{
       margin-left: 10%;
+      padding-top: 3%;
       margin-top: 27%;
       color:rgba(31,85,74,1);
       text-align: center;
@@ -427,6 +435,9 @@ color:#8fcdf1;
       float: right;
       margin-top: 18%;
       margin-right: 10%;
+      position: relative;
+      z-index: 2;
+      
     }
 
 @media screen and (max-width:376px){
