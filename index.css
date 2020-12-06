@@ -175,7 +175,7 @@ html {
     font-weight: normal; 
     font-size: 25px;
     text-align: center;
-    margin-top: 19%;
+
 }
 
 #body {
@@ -194,6 +194,7 @@ background-size: 100%;
 #clouds{
   position: absolute;
   z-index: 1;
+  height: 400%;
 }
 
 /* made this positioning relative so that I can move the title around*/
@@ -223,12 +224,9 @@ hr {
 }
 
 #info {
-left: 54px;
-top: 200px;
-margin-left: 350px;
-position: absolute;
+
+margin-top: 2%;
 overflow: visible;
-width: 45%;
 white-space: nowrap;
 text-align: center;
 font-style: normal;
@@ -291,12 +289,12 @@ color:#8fcdf1;
 #design{
     position: relative;
     z-index: 3;
-  margin-top: 14%;
+  margin-top: 10%;
 
 }
 
 #logoWhite{
-  margin-top: 19%;
+  margin-top: 15%;
   margin-left: 3%;
   position: absolute;
   z-index: 4;
@@ -304,7 +302,7 @@ color:#8fcdf1;
 }
 
 #design2{
-  margin-top: 12%;
+  margin-top: 10%;
   position: absolute;
   z-index: 2;
 }
@@ -421,7 +419,7 @@ color:#8fcdf1;
     #begin{
       margin-left: 10%;
       padding-top: 3%;
-      margin-top: 27%;
+      margin-top: 17%;
       color:rgba(31,85,74,1);
       text-align: center;
       float: left;
@@ -433,7 +431,7 @@ color:#8fcdf1;
 
     #bee{
       float: right;
-      margin-top: 18%;
+      margin-top: 12%;
       margin-right: 10%;
       position: relative;
       z-index: 2;
