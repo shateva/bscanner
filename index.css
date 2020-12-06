@@ -194,7 +194,7 @@ background-size: 100%;
   position: absolute;
   z-index: 2;
   margin-top: 30%;
-  margin-left: 70%;
+  margin-left: 20%;
   height: 7%;
 }
 
@@ -204,6 +204,21 @@ background-size: 100%;
   margin-top: 49%;
   margin-left: 6%;
   height: 1.5%;
+}
+#bee3{
+  position: absolute;
+  z-index: 3;
+  margin-top: 5.5%;
+  margin-left: 43.5%;
+  height: 3%;
+}
+
+#bee4{
+  position: absolute;
+  z-index: 2;
+  margin-top: 20%;
+  margin-left: 70%;
+  height: 5%;
 }
 
 #clouds{
