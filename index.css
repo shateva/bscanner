@@ -250,8 +250,6 @@ margin-left: 630px;
 width: 175px;
 font-family: 'Rubik';
 border-radius: 20px;
-position: relative;
-z-index: 1;
 
 }
 
@@ -274,13 +272,13 @@ color:#8fcdf1;
 #design{
     position: relative;
     z-index: 3;
-
+  margin-top: 2%;
 
 }
 
 #logoWhite{
-  margin-top: 11%;
-  margin-left: 1%;
+  margin-top: 7%;
+  margin-left: 3%;
   position: absolute;
   z-index: 4;
 
