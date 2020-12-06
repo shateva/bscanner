@@ -10,11 +10,10 @@
 
 #navi{
 
-  position: fixed; /* Set the navbar to fixed position */
-  top: 0; /* Position the navbar at the top of the page */
   width: 100%; /* Full width */
   z-index: 800;
   font-family: 'Rubik';
+position: absolute;
 }
 
 html {
@@ -201,9 +200,10 @@ background-size: 100%;
 
 
 #logo{
+  margin-top: 1%;
     margin-left: 42%;
     padding-bottom: 20px;
-
+  position: relative;
 }
 
 
@@ -305,10 +305,6 @@ color:#8fcdf1;
   margin-top: 10%;
   position: absolute;
   z-index: 2;
-}
-
-#logo{
-  margin-top: 1%;
 }
 
 #logo2{

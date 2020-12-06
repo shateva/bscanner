@@ -5,11 +5,10 @@
 
 #navi{
 
-  position: fixed; /* Set the navbar to fixed position */
-  top: 0; /* Position the navbar at the top of the page */
   width: 100%; /* Full width */
   z-index: 800;
   font-family: 'Rubik';
+position: absolute;
 }
 
 html {
@@ -191,6 +190,7 @@ color: rgba(31,85,74,1);
   margin-top: 1%;
   margin-left: 42%;
   padding-bottom: 20px;
+position: relative;
 
 }
 
