@@ -2,6 +2,12 @@
   margin: 0;
   padding: 0;
 }
+
+#container{
+  position: absolute;
+  z-index: 2;
+}
+
 #navi{
 
   position: fixed; /* Set the navbar to fixed position */
@@ -177,6 +183,12 @@ background-color: #EAFAF1;
 color: rgba(31,85,74,1);
 }
 
+body{
+  background-color: #EBF7FD;
+background-image: url('Clouds.png');
+background-size: 100%;
+}
+
 /* made this positioning relative so that I can move the title around*/
 
 
@@ -272,12 +284,12 @@ color:#8fcdf1;
 #design{
     position: relative;
     z-index: 3;
-  margin-top: 2%;
+  margin-top: 12%;
 
 }
 
 #logoWhite{
-  margin-top: 7%;
+  margin-top: 17%;
   margin-left: 3%;
   position: absolute;
   z-index: 4;
@@ -401,7 +413,7 @@ color:#8fcdf1;
 
     #begin{
       margin-left: 10%;
-      margin-top: 20%;
+      margin-top: 27%;
       color:rgba(31,85,74,1);
       text-align: center;
       float: left;
@@ -413,7 +425,7 @@ color:#8fcdf1;
 
     #bee{
       float: right;
-      margin-top: 10%;
+      margin-top: 18%;
       margin-right: 10%;
     }
 
