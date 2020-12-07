@@ -363,7 +363,7 @@ color: #0B5345 ;
 
 /* css for the userinput text in the results section*/
 #test{
-  width: 50%;
+  width: 70%;
   font-size: 18px;
   color: black;
  padding: 1.5em;
@@ -372,8 +372,7 @@ color: #0B5345 ;
   border-radius: 20px;
   box-shadow: 0px 8px 5px lightgrey;
   font-family: 'Rubik';
-  margin-left: 7em;
-  margin-left: 8.5em;
+  margin-left: 5.5em;
   visibility: hidden;
 }
 
