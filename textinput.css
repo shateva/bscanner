@@ -256,7 +256,7 @@ display: block;
 
 
 #scanning{
-background-color: #1F554A;
+background-color: #43c2a8;
 color: white;
 border: none;
 padding: 10px 15px;
@@ -372,7 +372,7 @@ color: #0B5345 ;
   border-radius: 20px;
   box-shadow: 0px 8px 5px lightgrey;
   font-family: 'Rubik';
-  margin-left: 5.5em;
+  margin-left: 5em;
   visibility: hidden;
 }
 
