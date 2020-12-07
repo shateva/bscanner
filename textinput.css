@@ -276,7 +276,7 @@ font-family: 'Rubik';
 
 /*makes the start scanning button red when you hover over it*/
 #scanning a:hover{
-color:#8fcdf1;
+color:#0B5345;
 }
 
 /*moved footer to the bottom of the page*/
@@ -309,13 +309,13 @@ color: #0B5345 ;
   }
 
   mark{
-    background: yellow;
+    background: #EFDE97;
     color: black;
 }
 
   mark.secondary {
   padding: 0;
-   background-color: orange;
+   background-color: #FDAD5D;
   }
 
   mark.three {
@@ -465,7 +465,7 @@ color: #0B5345 ;
   z-index: 2000;
   margin-top: 26.5%;
   margin-left: 66.5%;
-  background-color: yellow;
+  background-color: #EFDE97;
   width: 35px;
   height: 35px;
   border-radius: 50%;
@@ -475,6 +475,8 @@ color: #0B5345 ;
 
 #circle p{
   margin-top: 25%;
+  color: rgba(31,85,74,1);
+  font-family: 'Rubik';
 }
 
 #key {
