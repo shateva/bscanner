@@ -170,7 +170,7 @@ function scanText() {
 
     if (count === 0) {
         alrt = document.createElement('p');
-        alrt.appendChild(document.createTextNode('We got nothing'));
+        alrt.appendChild(document.createTextNode('There were no biased phrases found in this text, however that does not mean this text does not contain bias. We suggest that you still keep an eye out for any words that suggest bias!'));
         alert.appendChild(alrt);
     }
   document.getElementById("countCircle").innerHTML = countAll();
