@@ -326,19 +326,18 @@ color:#8fcdf1;
 #design{
     position: relative;
     z-index: 3;
-  float: left;
 
 }
 
-/*
+
 #logoWhite{
-  margin-top: 19%;
+  margin-top: 20%;
   margin-left: 3%;
   position: absolute;
   z-index: 4;
 
 }
-*/
+
 
 #design2{
   margin-top: 10%;
