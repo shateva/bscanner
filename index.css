@@ -316,21 +316,29 @@ color:#8fcdf1;
 
 /*placed the logo and title side to side*/
 
+#bee{
+  margin-top: 40%;
+  margin-right: 10%;
+  position: absolute;
+  z-index: 6;
+}
 
 #design{
     position: relative;
     z-index: 3;
-  margin-top: 10%;
+  float: left;
 
 }
 
+/*
 #logoWhite{
-  margin-top: 15%;
+  margin-top: 19%;
   margin-left: 3%;
   position: absolute;
   z-index: 4;
 
 }
+*/
 
 #design2{
   margin-top: 10%;
@@ -463,21 +471,14 @@ color:#8fcdf1;
       margin-top: 17%;
       color:rgba(31,85,74,1);
       text-align: center;
-      float: left;
+  
       font-size: 230%;
       font-family: 'Rubik';
       float: left;
   
     }
 
-    #bee{
-      float: right;
-      margin-top: 12%;
-      margin-right: 10%;
-      position: relative;
-      z-index: 2;
-      
-    }
+   
 
 @media screen and (max-width:376px){
   #info{
