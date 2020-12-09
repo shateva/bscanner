@@ -173,6 +173,8 @@ function scanText() {
         alrt.appendChild(document.createTextNode('There were no biased phrases found in this text, however that does not mean this text does not contain bias. We suggest that you still keep an eye out for any words that suggest bias!'));
         alert.appendChild(alrt);
     }
+
+
   document.getElementById("countCircle").innerHTML = countAll();
     // clears phraseFound and userInput
     phrasesFound = new Array();
@@ -209,16 +211,21 @@ function countString(hold){
 
 //highlights the phrase passed in
 function highlighter(phraseHold2){
-    for (var i = 0; i <= phrasesFound.length; i++){
-        //highlights yellow is phrase is used one time
-        if (countString(phrasesFound[i]) < 3){
-            var instance = new Mark(document.querySelector("#test"));
-            instance.mark(phrasesFound[i], {accuracy: "partially", separateWordSearch: false,});
-        }else if(countString(phrasesFound[i]) < 100){
-            //highlights orange if phrase is used 2-3 times
-            var instance = new Mark(document.querySelector("#test"));
-            instance.mark(phrasesFound[i], {accuracy: "partially", separateWordSearch: false, className: 'secondary'},);
-        }   
+
+    if (phrasesFound.length > 0){
+
+    
+        for (var i = 0; i <= phrasesFound.length; i++){
+            //highlights yellow is phrase is used one time
+            if (countString(phrasesFound[i]) < 3){
+                var instance = new Mark(document.querySelector("#test"));
+                instance.mark(phrasesFound[i], {accuracy: "partially", separateWordSearch: false,});
+             }else if(countString(phrasesFound[i]) < 100){
+                //highlights orange if phrase is used 2-3 times
+                var instance = new Mark(document.querySelector("#test"));
+                instance.mark(phrasesFound[i], {accuracy: "partially", separateWordSearch: false, className: 'secondary'},);
+            }   
+        }
     }
 }
 
