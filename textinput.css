@@ -28,17 +28,7 @@ html {
 #menu {
   margin-left: 1%;
   margin-top: 1%;
-  font-size: small;
   width: fit-content;
-}
-
-#menu a {
-  color: #0B5345;
-  text-decoration: none;
-}
-
-#menu a:hover{
-  color:#EFDE97;
 }
 
 #caption{
