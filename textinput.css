@@ -259,7 +259,7 @@ display: block;
 
 
 #scanning{
-background-color: #43c2a8;
+background-color: #EFDE97;
 color: white;
 border: none;
 padding: 10px 15px;
@@ -272,14 +272,14 @@ margin-left: 40%;
 
 /*made the link white*/
 #scanning a{
-color: white;
+color: #0B5345;
 text-decoration: none;
 font-family: 'Rubik';
 }
 
 /*makes the start scanning button red when you hover over it*/
 #scanning a:hover{
-color:#0B5345;
+color: white;
 }
 
 /*moved footer to the bottom of the page*/
@@ -329,8 +329,8 @@ color: #0B5345 ;
 
 /*moves the start scanning heading to the left*/
 #userInput-heading{
-  padding-top: 5%;
-  margin-top: 15%;
+  padding-top: 4%;
+
     float: left;
     width: 50%;
     margin-bottom: 8%;
@@ -470,7 +470,7 @@ color: #0B5345 ;
 #circle{
   position: absolute;
   z-index: 2000;
-  margin-top: 26.5%;
+  margin-top: 10.5%;
   margin-left: 66.5%;
   background-color: #EFDE97;
   width: 35px;
@@ -487,7 +487,7 @@ color: #0B5345 ;
 }
 
 #key {
-  margin-top: 20%;
+  margin-top: 4%;
   visibility: hidden;
   margin-left: 15.5%;
   margin-bottom: 1%;
@@ -502,17 +502,31 @@ color: #0B5345 ;
   margin-bottom: 10%;
   background-color: white;
   width: 18%;
-  visibility: hidden;
+  display: none;
   -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
     border-radius: 10px;
 }
 
-
-#circle:hover + #hide {
-  visibility: visible;
+#design{
+  display: none;
 }
 
+
+#circle:hover + #hide {
+  display: block;
+}
+
+#gradient{
+  background-color: rgba(31,85,74,1);
+  background-image: linear-gradient(rgba(31,85,74,1), 3%,  #EBF7FD);
+  padding-bottom: 10%;
+  margin-top: 32.9%;
+}
+
+#holdStuff{
+  display: none;
+}
 
 @media screen and (max-width:415px) {
   #logo{

@@ -90,6 +90,8 @@ function scanText() {
     document.getElementById("circle").style.visibility = "visible";
     document.getElementById("key").style.visibility = "visible";
     document.getElementById("test").style.visibility = "visible";
+    document.getElementById("design").style.display = "block";
+    document.getElementById("holdStuff").style.display = "block";
 
     // removes any alerts that already exist so that
     // alerts aren't repeated
