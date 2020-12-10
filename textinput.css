@@ -559,3 +559,7 @@ color: #0B5345 ;
     font-size: 8px;
   }
 }
+#somebees{
+  position: absolute;
+  z-index: 2;
+}
