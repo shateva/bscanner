@@ -2,6 +2,13 @@
   margin: 0;
   padding: 0;
 }
+
+
+#recording-instructions{
+  text-align: center;
+  padding-top: 3%;
+}
+
 #container{
   z-index: 1;
 }
@@ -267,8 +274,32 @@ width: 125px;
 font-family: 'Rubik';
 border-radius: 20px;
 padding-top: 12px;
-margin-left: 40%;
+margin-left: 5%;
 }
+
+#record{
+  background-color: #EFDE97;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  width: 125px;
+  font-family: 'Rubik';
+  border-radius: 20px;
+  padding-top: 12px;
+  margin-left: 15%;
+  }
+
+  #pause{
+    background-color: #EFDE97;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    width: 125px;
+    font-family: 'Rubik';
+    border-radius: 20px;
+    padding-top: 12px;
+    margin-left: 5%;
+    }
 
 /*made the link white*/
 #scanning a{
