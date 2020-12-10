@@ -114,29 +114,28 @@ function scanText() {
     id_5 = (userInput.match(/the whites/g) || []).length.toString()
     id_6 = (userInput.match(/the latinos/g) || []).length.toString()
 
-    console.log(userInput);
     if (userInput === '') {
         msg.classList.add("error");
         msg.innerHTML = 'Please enter text below';
     }
 
     // Goes through the scanned text, checks for phrases in scanned text
-    for (i = 0; i < phrases.length; i++) {
+    for (var i = 0; i < phrases.length; i++) {
         if (userInput.includes(phrases[i].phrase)) {
-            //alert("Bias Checking Test");
             // pushes the phrase that was found to the array
             phrasesFound.push(phrases[i].phrase);
             console.log(phrasesFound);
             //prints number of phrases that were found
             document.getElementById("hide").innerHTML = "["+ phrasesFound.length + "] different phrases have been found <br>\n[" + countAll() + "] phrases in total have been found";
-            printLine();  
-            highlighter(phrases[i].phrase);   
+            printLine();   
         }
         else {
             printLine();
-            highlighter(phrases[i].phrase);
+          
         }
-
+        document.getElementById("countCircle").innerHTML = countAll();
+        highlighter();
+    
     }
     // used for counting the alerts
     var count = 0;
@@ -204,7 +203,6 @@ function printLine(){
 //returns the number of times a phrase occurs in the user's text (takes in a phrase as parameter)
 function countString(hold){
     let count = (userInput.match(new RegExp(hold, "gi")) || []).length;
-
     return count;
     }
 
@@ -212,12 +210,10 @@ function countString(hold){
 
 
 //highlights the phrase passed in
-function highlighter(phraseHold2){
+function highlighter(){
 
     if (phrasesFound.length > 0){
-
-    
-        for (var i = 0; i <= phrasesFound.length; i++){
+        for (var i = 0; i < phrasesFound.length; i++){
             //highlights yellow is phrase is used one time
             if (countString(phrasesFound[i]) < 3){
                 var instance = new Mark(document.querySelector("#test"));
@@ -228,18 +224,16 @@ function highlighter(phraseHold2){
                 instance.mark(phrasesFound[i], {accuracy: "partially", separateWordSearch: false, className: 'secondary'},);
             }   
         }
+        console.log(phrasesFound[i]);
     }
 }
 
 function countAll(){
     let sum = 0;
-
-
     for (var i = 0; i < phrasesFound.length; i++){
          sum += countString(phrasesFound[i]);
-
     }
-
+    console.log(sum);
     return sum;
 }
 
