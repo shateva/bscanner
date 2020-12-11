@@ -10,8 +10,7 @@
 
 #recording-instructions{
   text-align: center;
-  padding-top: 3%;
-  padding-top: 8%;
+ padding-top: 12%;
 }
 
 #container{
@@ -131,6 +130,7 @@ display: block;
 #btnGroup{
   margin-left: 35%;
   margin-bottom: 40%;
+  margin-top: 2%;
 }
 
 #scanning{
@@ -145,6 +145,8 @@ padding-top: 12px;
 margin-left: 45%;
 position: absolute;
 font-weight: bold;
+margin-top: 2%;
+
 }
 
 #record{
