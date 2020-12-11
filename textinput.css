@@ -115,7 +115,7 @@ font-family: Futura, "Trebuchet MS", Arial, sans-serif;
     position: absolute;
     z-index: 10;
     resize: none; /*remove the resize handle on the bottom right*/
-  border-width: 2px;
+  border-width: 3px;
     border-bottom: none;
 
 
@@ -172,6 +172,11 @@ font-weight: bold;
     font-weight: bolder;
     }
 
+    #record p:hover{
+      color: white;
+      cursor: pointer;
+      }
+
   #pause{
     background-color: #EFDE97;
     color: white;
@@ -194,6 +199,11 @@ font-weight: bold;
       text-align: center;
       font-weight: bolder;
       }
+
+      #pause p:hover{
+        color: white;
+        cursor: pointer;
+        }
 
 /*made the link white*/
 #scanning a{
@@ -343,8 +353,8 @@ color: #0B5345 ;
 }
 
 #buttonBack{
-    width: 44.5%;
-    margin-left: 28.4%;
+    width: 44.3%;
+    margin-left: 28.5%;
     background: white;
     padding-bottom: 2%;
     padding-top: 10%;

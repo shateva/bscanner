@@ -310,6 +310,7 @@ text-decoration: none;
 /*makes the start scanning button yellow when you hover over it*/
 #scanning a:hover{
 color:#EFDE97;
+cursor: pointer;
 }
 
 /*moved footer to the bottom of the page*/
