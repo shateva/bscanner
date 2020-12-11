@@ -253,7 +253,7 @@ color: #0B5345 ;
 /*moves the start scanning heading to the left*/
 #userInput-heading{
   padding-top: 4%;
-
+  
     float: left;
     width: 50%;
     margin-bottom: 8%;
@@ -265,7 +265,7 @@ color: #0B5345 ;
     font-family: 'Rubik';
     margin-bottom: 4%;
     position: relative;
-   
+   color: rgba(31,85,74,1);
 }
 /*moves the all alerts heading to the left*/
 #alert-heading{
@@ -285,6 +285,7 @@ color: #0B5345 ;
     margin-right: 9em;
     position: relative;
     z-index: 2;
+    color: rgba(31,85,74,1);
 }
 
 /* css for the userinput text in the results section*/
@@ -362,7 +363,7 @@ color: #0B5345 ;
     width: 100%;
     position: absolute;
     z-index: 1;
-    margin-top: 15%;
+    margin-top: 17%;
  
 }
 
