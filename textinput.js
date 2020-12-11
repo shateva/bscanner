@@ -28,27 +28,29 @@ var phrases = [
     {
         id: 3,
         phrase: 'the blacks',
-        explanation: 'There\'s an "othering" effect made when you turn these adjectives into nouns. Does every person who uses these phrases have an inherent racial bias? Not necessarily, but it\'s best to avoid these phrases and instead use "Black people".'
+        explanation: 'There\'s an "othering" effect made when turning these adjectives into nouns. Does every person who uses these phrases have an inherent racial bias? Not necessarily, but it\'s best to avoid these phrases and instead use "Black people".'
        // score: id_3
     },
     {
         id: 4,
         phrase: 'the asians',
-        explanation: 'There\'s an "othering" effect made when you turn these adjectives into nouns. Does every person who uses these phrases have an inherent racial bias? Not necessarily, but it\'s best to avoid these phrases and instead use "White people".'
+        explanation: 'There\'s an "othering" effect made when turning these adjectives into nouns. Does every person who uses these phrases have an inherent racial bias? Not necessarily, but it\'s best to avoid these phrases and instead use "White people".'
        // score: id_4
     },
     {
         id: 5,
         phrase: 'the whites',
-        explanation: 'There\'s an "othering" effect made when you turn these adjectives into nouns. Does every person who uses these phrases have an inherent racial bias? Not necessarily, but it\'s best to avoid these phrases and instead use "Latino people".'
+        explanation: 'There\'s an "othering" effect made when turning these adjectives into nouns. Does every person who uses these phrases have an inherent racial bias? Not necessarily, but it\'s best to avoid these phrases and instead use "Latino people".'
       //  score: id_5
     },
     {
         id: 6,
         phrase: 'the latinos',
-        explanation: 'There\'s an "othering" effect made when you turn these adjectives into nouns. Does every person who uses these phrases have an inherent racial bias? Not necessarily, but it\'s best to avoid these phrases and instead use "The white people" or "The black people".'
+        explanation: 'There\'s an "othering" effect made when turning these adjectives into nouns. Does every person who uses these phrases have an inherent racial bias? Not necessarily, but it\'s best to avoid these phrases and instead use "The white people" or "The black people".'
       //  score: id_6 
-    }
+    },
+    
+
 ];
 
 // global variables that allow us to access contents of
@@ -171,7 +173,7 @@ function scanText() {
 
     if (count === 0) {
         alrt = document.createElement('p');
-        alrt.appendChild(document.createTextNode('There were no biased phrases found in this text, however that does not mean this text does not contain bias. We suggest that you still keep an eye out for any words that suggest bias!'));
+        alrt.appendChild(document.createTextNode('There were no biased phrases found in this text, however that does not mean this text does not contain bias. Ask yourself questions like... Is the writer using words like "I", "we", "our" and other first-person language? If so, that shows that the text is probably from an opinion piece and the writer may not be impartial. We suggest that you still keep an eye out for any words that suggest bias!'));
         alert.appendChild(alrt);
     }
 
