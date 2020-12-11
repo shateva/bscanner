@@ -44,7 +44,7 @@ html {
 
 #menuToggle a:hover
 {
-    color:#EFDE97;;
+    color:#EFDE97;
 }
 
 
@@ -224,7 +224,7 @@ background-size: 100%;
 #clouds{
   position: absolute;
   z-index: 1;
-  height: 300%;
+  height: 400%;
 }
 
 /* made this positioning relative so that I can move the title around*/
@@ -307,9 +307,9 @@ color: white;
 text-decoration: none;
 }
 
-/*makes the start scanning button red when you hover over it*/
+/*makes the start scanning button yellow when you hover over it*/
 #scanning a:hover{
-color:#8fcdf1;
+color:#EFDE97;
 }
 
 /*moved footer to the bottom of the page*/

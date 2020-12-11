@@ -17,11 +17,11 @@
 
    <body style="background-color:#EBF7FD ">
       <img src="BeeRight.png" id = "bee1" alt= "bees_background">
-      <img src="beeLeft.png" id = "bee2" alt= "bees_background">
+ 
       <img src="beeRight.png" id = "bee3" alt= "bees_background">
       <img src="beeLeft.png" id = "bee4" alt= "bees_background">
       <img src="beeRight.png" id = "bee5" alt= "bees_background">
-      <img src="beeLeft.png" id = "bee6" alt= "bees_background">
+
       <img src="beeLeft.png" id = "bee7" alt= "bees_background">
       <header>
          <title> B Scanner </title>
@@ -42,7 +42,7 @@
       </div>
        <div id= "logo">
          
-      <a href="index.html">
+      <a id = "logoLink" href="index.html">
       <img src="rsz_b_scanner_logo-15.png" alt= "Logo">
       </a>
       
@@ -77,9 +77,18 @@
 
          <div id="buttonBack">
             <div>
-         <button id="record" title="Start Sound Recording">Start</button>
-         <button id="pause" title="Pause Sound Recording">Pause</button>
-         <button id="scanning"><a href= "#userInput-heading">CHECK BIAS</a></button>
+               <button id="scanning"><a href= "#userInput-heading">CHECK BIAS</a></button>
+
+               <div id="btnGroup" style="position:absolute;">
+                  <div id="div1" style="position:absolute; top:0; left:0;">
+                     <button id="record" title="Start Sound Recording"><p>&#8227</p></button>
+                  </div>
+
+                  <div id="div2" style="position:absolute; top:0; left:0;">
+                     <button id="pause" title="Pause Sound Recording"><p>&#8214;</p></button></div>
+              </div>
+   
+       
          </div>
 
          <p id="recording-instructions">To check audio for bias, press the <strong>Start</strong> button and start talking or playing audio.</p>

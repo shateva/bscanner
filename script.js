@@ -18,6 +18,7 @@ var noteContent = '';
 
 
 
+
 /*-----------------------------
       Voice Recognition 
 ------------------------------*/
@@ -51,6 +52,7 @@ recognition.onresult = function(event) {
 
 recognition.onstart = function() { 
   instructions.text('Voice recognition activated. Try speaking into the microphone.');
+  document.getElementById("record").style.display = "none";
 }
 
 recognition.onspeechend = function() {
@@ -80,6 +82,7 @@ $('#record').on('click', function(e) {
 $('#pause').on('click', function(e) {
   recognition.stop();
   instructions.text('Voice recognition paused.');
+  document.getElementById("record").style.display = "block";
 });
 
 // Sync the text inside the text area with the noteContent variable.
