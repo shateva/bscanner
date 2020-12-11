@@ -128,7 +128,7 @@ function scanText() {
             phrasesFound.push(phrases[i].phrase);
             console.log(phrasesFound);
             //prints number of phrases that were found
-            document.getElementById("hide").innerHTML = "["+ phrasesFound.length + "] different phrases have been found <br>\n[" + countAll() + "] phrases in total have been found";
+            document.getElementById("hide").innerHTML = "["+ phrasesFound.length + "] different phrase(s) have been found <br>\n[" + countAll() + "] phrase(s) in total have been found";
             printLine();   
         }
         else {
@@ -173,7 +173,7 @@ function scanText() {
 
     if (count === 0) {
         alrt = document.createElement('p');
-        alrt.appendChild(document.createTextNode('There were no biased phrases found in this text, however that does not mean this text does not contain bias. Ask yourself questions like... Is the writer using words like "I", "we", "our" and other first-person language? If so, that shows that the text is probably from an opinion piece and the writer may not be impartial. We suggest that you still keep an eye out for any words that suggest bias!'));
+        alrt.appendChild(document.createTextNode('There were no biased phrases found in this text, however that does not mean this text does not contain bias. We suggest that you still keep an eye out for any words that suggest bias!'));
         alert.appendChild(alrt);
     }
 
