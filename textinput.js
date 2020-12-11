@@ -1,6 +1,6 @@
 // running list of phrases we want to go thorough
 // everything must be lowercase
-var phrases2 = ['illegal aliens', 'illegal alien', 'oriental', 'orientals', 'illegals', 'the blacks', 'the asians', 'the whites', 'the latinos']
+var phrases2 = ['illegal aliens', 'illegal alien', 'oriental', 'orientals', 'illegals', 'the blacks', 'the asians', 'the whites', 'the latinos', 'non-white']
 
 // phrases is now an object literal (same thing as a dictionary)
 // to access a phrase, for example 'illegal aliens', we'd say
@@ -49,7 +49,12 @@ var phrases = [
         explanation: 'There\'s an "othering" effect made when turning these adjectives into nouns. Does every person who uses these phrases have an inherent racial bias? Not necessarily, but it\'s best to avoid these phrases and instead use "The white people" or "The black people".'
       //  score: id_6 
     },
-    
+    {
+        id: 7,
+        phrase: 'non-white',
+        explanation: '"Non-white" can imply that the writer sees white as being the default, although context does matter in this case.'
+      //  score: id_6 
+    },
 
 ];
 
