@@ -3,6 +3,10 @@
     padding: 0;
   }
   
+  #exLink{
+    color: #e6bb12;
+  }
+
   #logo a{
     display: block;
     padding-top: 1.5em;
