@@ -97,7 +97,10 @@
   font-family: Futura, "Trebuchet MS", Arial, sans-serif;
   }
   
-  
+  #txt::-webkit-scrollbar {
+    display: none;
+  }
+
   #txt{
       width:45%;
       margin-top: 5%;
